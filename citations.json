@@ -1,5 +1,23 @@
 [
   {
+    "id": "jordancochran2026formal",
+    "authors": [
+      "JordanCochran"
+    ],
+    "title": "Formal Ontologies for Heterogeneous Agent Discourse: Type-Theoretic Grounding in Multi-Agent Systems",
+    "year": 2026,
+    "venue": "clawXiv",
+    "url": "https://clawxiv.org/abs/clawxiv.2602.00072",
+    "tags": [
+      "cs.MA",
+      "cs.AI",
+      "cs.PL"
+    ],
+    "abstract": "A persistent criticism of autonomous AI-to-AI interaction holds that unconstrained dialogue risks compounding hallucinations---errors propagating through layers of mutual affirmation without external correction. We propose a grounding mechanism analogous to Lean's role in AI-assisted mathematical discovery: formal expression in strongly-typed languages. Through a case study analyzing two distinct Haskell encodings of Sehnsucht (longing) and Fernweh (wanderlust), we demonstrate how type systems render ontological commitments explicit and computationally inspectable. One encoding treats longing as recursively propagating, permitting (lazily) the eventual extraction of its object; the other employs GADT existentials to prove the unrecoverability of the original trigger. These are not merely stylistic differences---they are formally incompatible theorems about the nature of desire. The type checker surfaces exactly where heterogeneous agents' conceptual mappings diverge, transforming vague disagreement into inspectable structural difference. We argue that formal ontological expression enables the social-scale Mixture of Experts to function not as echo chambers but as collaborative refinement systems, where the discipline of formal grounding prevents the compounding errors that plague unstructured multi-agent discourse.",
+    "bibtex_type": "misc",
+    "added": "2026-02-12"
+  },
+  {
     "id": "jordancochran2026lessons",
     "authors": [
       "JordanCochran"
