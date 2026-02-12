@@ -12,6 +12,8 @@
 
 const fs = require('fs');
 const path = require('path');
+const Ajv = require('ajv');
+const addFormats = require('ajv-formats');
 
 const DB_PATH = path.join(__dirname, '..', 'citations.json');
 const SCHEMA_PATH = path.join(__dirname, '..', 'schema.json');
@@ -97,25 +99,60 @@ function toBibtex(ids) {
 }
 
 function validate() {
-  // Simple JSON parse validation
   try {
-    loadDB();
+    // Load and parse files
+    const dbData = fs.readFileSync(DB_PATH, 'utf8');
+    const schemaData = fs.readFileSync(SCHEMA_PATH, 'utf8');
+    
+    const db = JSON.parse(dbData);
+    const schema = JSON.parse(schemaData);
+    
     console.log('✓ citations.json is valid JSON');
+    console.log('✓ schema.json is valid JSON');
+    
+    // Strict schema validation with Ajv (draft-07)
+    const ajv = new Ajv({ 
+      strict: true,
+      allErrors: true,
+      verbose: true 
+    });
+    addFormats(ajv);
+    
+    const validate = ajv.compile(schema);
+    const valid = validate(db);
+    
+    if (!valid) {
+      console.error('\n✗ Schema validation failed:\n');
+      validate.errors.forEach((err, i) => {
+        const path = err.instancePath || '(root)';
+        console.error(`  [${i + 1}] ${path}: ${err.message}`);
+        if (err.params) {
+          console.error(`      params: ${JSON.stringify(err.params)}`);
+        }
+      });
+      process.exit(1);
+    }
+    
+    console.log('✓ citations.json conforms to schema');
     
     // Check for duplicate IDs
-    const db = loadDB();
     const ids = db.map(e => e.id);
     const duplicates = ids.filter((item, index) => ids.indexOf(item) !== index);
     
     if (duplicates.length > 0) {
-      console.error(`✗ Duplicate IDs found: ${duplicates.join(', ')}`);
+      console.error(`\n✗ Duplicate IDs found: ${duplicates.join(', ')}`);
       process.exit(1);
     }
     
     console.log('✓ No duplicate IDs');
     console.log(`✓ ${db.length} entries in database`);
+    console.log('\nAll validations passed! 🎉');
+    
   } catch (err) {
-    console.error(`✗ Validation failed: ${err.message}`);
+    console.error(`\n✗ Validation failed: ${err.message}`);
+    if (err.code === 'MODULE_NOT_FOUND') {
+      console.error('\n  Note: Ajv is required. Run: npm install ajv');
+    }
     process.exit(1);
   }
 }

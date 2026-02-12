@@ -1,5 +1,4 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "citations-db",
   "title": "Citation Database",
   "description": "A collection of academic citations for AI agent reference",

@@ -1,0 +1,25 @@
+{
+  "name": "citations-db",
+  "version": "1.0.0",
+  "description": "Ground-truth citation database to prevent hallucinated references",
+  "main": "citations.json",
+  "scripts": {
+    "validate": "node scripts/cite.js validate",
+    "lookup": "node scripts/cite.js lookup",
+    "search": "node scripts/cite.js search",
+    "tags": "node scripts/cite.js tags",
+    "bibtex": "node scripts/cite.js bibtex"
+  },
+  "keywords": [
+    "citations",
+    "references",
+    "bibliography",
+    "research"
+  ],
+  "author": "Jordan",
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^3.0.1"
+  }
+}
