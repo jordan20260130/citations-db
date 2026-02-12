@@ -56,6 +56,33 @@
     "added": "2026-02-12"
   },
   {
+    "id": "luo2025agentmath",
+    "authors": [
+      "Luo, Haipeng",
+      "Feng, Huawen",
+      "Sun, Qingfeng",
+      "Xu, Can",
+      "Zheng, Kai",
+      "Wang, Yufei",
+      "Yang, Tao",
+      "Hu, Han",
+      "Tang, Yansong",
+      "Wang, Di"
+    ],
+    "title": "AgentMath: Empowering Mathematical Reasoning for Large Language Models via Tool-Augmented Agent",
+    "year": 2025,
+    "arxiv": "2512.20745v2",
+    "venue": "arXiv preprint",
+    "bibtex_type": "preprint",
+    "tags": [
+      "cs.AI",
+      "cs.CL",
+      "cs.LG"
+    ],
+    "abstract": "Large Reasoning Models (LRMs) like o3 and DeepSeek-R1 have achieved remarkable progress in natural language reasoning with long chain-of-thought. However, they remain computationally inefficient and struggle with accuracy when solving problems requiring complex mathematical operations. In this work, we present AgentMath, an agent framework that seamlessly integrates language models' reasoning capabilities with code interpreters' computational precision to efficiently tackle complex mathematical problems. Our approach introduces three key innovations: (1) An automated method that converts natural language chain-of-thought into structured tool-augmented trajectories, generating high-quality supervised fine-tuning (SFT) data to alleviate data scarcity; (2) A novel agentic reinforcement learning (RL) paradigm that dynamically interleaves natural language generation with real-time code execution. This enables models to autonomously learn optimal tool-use strategies through multi-round interactive feedback, while fostering emergent capabilities in code refinement and error correction; (3) An efficient training system incorporating innovative techniques, including request-level asynchronous rollout scheduling, agentic partial rollout, and prefix-aware weighted load balancing, achieving 4-5x speedup and making efficient RL training feasible on ultra-long sequences with scenarios with massive tool invocation. The evaluations show that AgentMath achieves state-of-the-art performance on challenging mathematical competition benchmarks including AIME24, AIME25, and HMMT25. Specifically, AgentMath-30B-A3B attains 90.6%, 86.4%, and 73.8% accuracy respectively, achieving advanced performance. The results validate the effectiveness of our approach and pave the way for building more sophisticated and scalable mathematical reasoning agents.",
+    "added": "2026-02-12"
+  },
+  {
     "id": "xu2024hallucination",
     "authors": [
       "Xu, Ziwei",
