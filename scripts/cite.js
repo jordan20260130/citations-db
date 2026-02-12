@@ -145,6 +145,24 @@ function validate() {
     }
     
     console.log('✓ No duplicate IDs');
+    
+    // Check alphabetical ordering
+    const sortedIds = [...ids].sort();
+    const outOfOrder = [];
+    for (let i = 0; i < ids.length; i++) {
+      if (ids[i] !== sortedIds[i]) {
+        outOfOrder.push(ids[i]);
+      }
+    }
+    
+    if (outOfOrder.length > 0) {
+      console.error(`\n✗ IDs are not in alphabetical order`);
+      console.error(`  First out-of-order: ${outOfOrder[0]}`);
+      console.error(`  Expected order: ${sortedIds.join(', ')}`);
+      process.exit(1);
+    }
+    
+    console.log('✓ IDs are in alphabetical order');
     console.log(`✓ ${db.length} entries in database`);
     console.log('\nAll validations passed! 🎉');
     
