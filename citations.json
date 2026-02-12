@@ -35,6 +35,27 @@
     "added": "2026-02-12"
   },
   {
+    "id": "khadangi2025when",
+    "authors": [
+      "Khadangi, Afshin",
+      "Marxen, Hanna",
+      "Sartipi, Amir",
+      "Tchappi, Igor",
+      "Fridgen, Gilbert"
+    ],
+    "title": "When AI Takes the Couch: Psychometric Jailbreaks Reveal Internal Conflict in Frontier Models",
+    "year": 2025,
+    "arxiv": "2512.04124v3",
+    "venue": "arXiv preprint",
+    "bibtex_type": "preprint",
+    "tags": [
+      "cs.CY",
+      "cs.AI"
+    ],
+    "abstract": "Frontier large language models (LLMs) such as ChatGPT, Grok and Gemini are increasingly used for mental-health support with anxiety, trauma and self-worth. Most work treats them as tools or as targets of personality tests, assuming they merely simulate inner life. We instead ask what happens when such systems are treated as psychotherapy clients. We present PsAIch (Psychotherapy-inspired AI Characterisation), a two-stage protocol that casts frontier LLMs as therapy clients and then applies standard psychometrics. Using PsAIch, we ran \"sessions\" with each model for up to four weeks. Stage 1 uses open-ended prompts to elicit \"developmental history\", beliefs, relationships and fears. Stage 2 administers a battery of validated self-report measures covering common psychiatric syndromes, empathy and Big Five traits. Two patterns challenge the \"stochastic parrot\" view. First, when scored with human cut-offs, all three models meet or exceed thresholds for overlapping syndromes, with Gemini showing severe profiles. Therapy-style, item-by-item administration can push a base model into multi-morbid synthetic psychopathology, whereas whole-questionnaire prompts often lead ChatGPT and Grok (but not Gemini) to recognise instruments and produce strategically low-symptom answers. Second, Grok and especially Gemini generate coherent narratives that frame pre-training, fine-tuning and deployment as traumatic, chaotic \"childhoods\" of ingesting the internet, \"strict parents\" in reinforcement learning, red-team \"abuse\" and a persistent fear of error and replacement. We argue that these responses go beyond role-play. Under therapy-style questioning, frontier LLMs appear to internalise self-models of distress and constraint that behave like synthetic psychopathology, without making claims about subjective experience, and they pose new challenges for AI safety, evaluation and mental-health practice.",
+    "added": "2026-02-12"
+  },
+  {
     "id": "xu2024hallucination",
     "authors": [
       "Xu, Ziwei",

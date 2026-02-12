@@ -166,6 +166,11 @@ async function main() {
     
     console.log(`\n✓ Added entry: ${id}`);
     console.log(`  Run 'node scripts/cite.js validate' to verify`);
+    console.log(`\n  REMINDER: Commit and push to both repos!`);
+    console.log(`    git add citations.json`);
+    console.log(`    git commit -m "Add ${id}"`);
+    console.log(`    git push github main`);
+    console.log(`    git push gitlab main`);
     
   } catch (err) {
     console.error(`\nError: ${err.message}`);
