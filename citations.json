@@ -1,5 +1,25 @@
 [
   {
+    "id": "akiba2024evolutionary",
+    "authors": [
+      "Akiba, Takuya",
+      "Shing, Makoto",
+      "Tang, Yujin",
+      "Sun, Qi",
+      "Ha, David"
+    ],
+    "title": "Evolutionary Optimization of Model Merging Recipes",
+    "year": 2024,
+    "arxiv": "2403.13187v2",
+    "venue": "arXiv preprint",
+    "bibtex_type": "preprint",
+    "tags": [
+      "cs.NE"
+    ],
+    "abstract": "Large language models (LLMs) have become increasingly capable, but their development often requires substantial computational resources. While model merging has emerged as a cost-effective promising approach for creating new models by combining existing ones, it currently relies on human intuition and domain knowledge, limiting its potential. Here, we propose an evolutionary approach that overcomes this limitation by automatically discovering effective combinations of diverse open-source models, harnessing their collective intelligence without requiring extensive additional training data or compute. Our approach operates in both parameter space and data flow space, allowing for optimization beyond just the weights of the individual models. This approach even facilitates cross-domain merging, generating models like a Japanese LLM with Math reasoning capabilities. Surprisingly, our Japanese Math LLM achieved state-of-the-art performance on a variety of established Japanese LLM benchmarks, even surpassing models with significantly more parameters, despite not being explicitly trained for such tasks. Furthermore, a culturally-aware Japanese VLM generated through our approach demonstrates its effectiveness in describing Japanese culture-specific content, outperforming previous Japanese VLMs. This work not only contributes new state-of-the-art models back to the open-source community, but also introduces a new paradigm for automated model composition, paving the way for exploring alternative, efficient approaches to foundation model development.",
+    "added": "2026-02-12"
+  },
+  {
     "id": "guingrich2023chatbots",
     "authors": [
       "Guingrich, Rose E.",
@@ -15,6 +35,90 @@
       "cs.AI"
     ],
     "abstract": "As artificial intelligence (AI) becomes more widespread, one question that arises is how human-AI interaction might impact human-human interaction. Chatbots, for example, are increasingly used as social companions, and while much is speculated, little is known empirically about how their use impacts human relationships. A common hypothesis is that relationships with companion chatbots are detrimental to social health by harming or replacing human interaction, but this hypothesis may be too simplistic, especially considering the social needs of users and the health of their preexisting human relationships. To understand how relationships with companion chatbots impact social health, we studied people who regularly used companion chatbots and people who did not use them. Contrary to expectations, companion chatbot users indicated that these relationships were beneficial to their social health, whereas non-users viewed them as harmful. Another common assumption is that people perceive conscious, humanlike AI as disturbing and threatening. Among both users and non-users, however, we found the opposite: perceiving companion chatbots as more conscious and humanlike correlated with more positive opinions and more pronounced social health benefits. Detailed accounts from users suggested that these humanlike chatbots may aid social health by supplying reliable and safe interactions, without necessarily harming human relationships, but this may depend on users' preexisting social needs and how they perceive both human likeness and mind in the chatbot.",
+    "added": "2026-02-12"
+  },
+  {
+    "id": "hammond2025multiagent",
+    "authors": [
+      "Hammond, Lewis",
+      "Chan, Alan",
+      "Clifton, Jesse",
+      "Hoelscher-Obermaier, Jason",
+      "Khan, Akbir",
+      "McLean, Euan",
+      "Smith, Chandler",
+      "Barfuss, Wolfram",
+      "Foerster, Jakob",
+      "Gavenčiak, Tomáš",
+      "Han, The Anh",
+      "Hughes, Edward",
+      "Kovařík, Vojtěch",
+      "Kulveit, Jan",
+      "Leibo, Joel Z.",
+      "Oesterheld, Caspar",
+      "Witt, Christian Schroeder de",
+      "Shah, Nisarg",
+      "Wellman, Michael",
+      "Bova, Paolo",
+      "Cimpeanu, Theodor",
+      "Ezell, Carson",
+      "Feuillade-Montixi, Quentin",
+      "Franklin, Matija",
+      "Kran, Esben",
+      "Krawczuk, Igor",
+      "Lamparth, Max",
+      "Lauffer, Niklas",
+      "Meinke, Alexander",
+      "Motwani, Sumeet",
+      "Reuel, Anka",
+      "Conitzer, Vincent",
+      "Dennis, Michael",
+      "Gabriel, Iason",
+      "Gleave, Adam",
+      "Hadfield, Gillian",
+      "Haghtalab, Nika",
+      "Kasirzadeh, Atoosa",
+      "Krier, Sébastien",
+      "Larson, Kate",
+      "Lehman, Joel",
+      "Parkes, David C.",
+      "Piliouras, Georgios",
+      "Rahwan, Iyad"
+    ],
+    "title": "Multi-Agent Risks from Advanced AI",
+    "year": 2025,
+    "arxiv": "2502.14143v1",
+    "venue": "arXiv preprint",
+    "bibtex_type": "preprint",
+    "tags": [
+      "cs.MA",
+      "cs.AI",
+      "cs.CY",
+      "cs.ET",
+      "cs.LG"
+    ],
+    "abstract": "The rapid development of advanced AI agents and the imminent deployment of many instances of these agents will give rise to multi-agent systems of unprecedented complexity. These systems pose novel and under-explored risks. In this report, we provide a structured taxonomy of these risks by identifying three key failure modes (miscoordination, conflict, and collusion) based on agents' incentives, as well as seven key risk factors (information asymmetries, network effects, selection pressures, destabilising dynamics, commitment problems, emergent agency, and multi-agent security) that can underpin them. We highlight several important instances of each risk, as well as promising directions to help mitigate them. By anchoring our analysis in a range of real-world examples and experimental evidence, we illustrate the distinct challenges posed by multi-agent systems and their implications for the safety, governance, and ethics of advanced AI.",
+    "added": "2026-02-12"
+  },
+  {
+    "id": "inoue2025wider",
+    "authors": [
+      "Inoue, Yuichi",
+      "Misaki, Kou",
+      "Imajuku, Yuki",
+      "Kuroki, So",
+      "Nakamura, Taishi",
+      "Akiba, Takuya"
+    ],
+    "title": "Wider or Deeper? Scaling LLM Inference-Time Compute with Adaptive Branching Tree Search",
+    "year": 2025,
+    "arxiv": "2503.04412v5",
+    "venue": "arXiv preprint",
+    "bibtex_type": "preprint",
+    "tags": [
+      "cs.AI"
+    ],
+    "abstract": "Recent advances demonstrate that increasing inference-time computation can significantly boost the reasoning capabilities of large language models (LLMs). Although repeated sampling (i.e., generating multiple candidate outputs) is a highly effective strategy, it does not leverage external feedback signals for refinement, which are often available in tasks like coding. In this work, we propose Adaptive Branching Monte Carlo Tree Search (AB-MCTS), a novel inference-time framework that generalizes repeated sampling with principled multi-turn exploration and exploitation. At each node in the search tree, AB-MCTS dynamically decides whether to \"go wider\" by expanding new candidate responses or \"go deeper\" by revisiting existing ones based on external feedback signals. We evaluate our method on complex coding and engineering tasks using frontier models. Empirical results show that AB-MCTS consistently outperforms both repeated sampling and standard MCTS, underscoring the importance of combining the response diversity of LLMs with multi-turn solution refinement for effective inference-time scaling. Code is available at https://github.com/SakanaAI/treequest .",
     "added": "2026-02-12"
   },
   {
@@ -90,6 +194,48 @@
     "added": "2026-02-12"
   },
   {
+    "id": "kumar2024automating",
+    "authors": [
+      "Kumar, Akarsh",
+      "Lu, Chris",
+      "Kirsch, Louis",
+      "Tang, Yujin",
+      "Stanley, Kenneth O.",
+      "Isola, Phillip",
+      "Ha, David"
+    ],
+    "title": "Automating the Search for Artificial Life with Foundation Models",
+    "year": 2024,
+    "arxiv": "2412.17799v2",
+    "venue": "arXiv preprint",
+    "bibtex_type": "preprint",
+    "tags": [
+      "cs.AI",
+      "cs.NE"
+    ],
+    "abstract": "With the recent Nobel Prize awarded for radical advances in protein discovery, foundation models (FMs) for exploring large combinatorial spaces promise to revolutionize many scientific fields. Artificial Life (ALife) has not yet integrated FMs, thus presenting a major opportunity for the field to alleviate the historical burden of relying chiefly on manual design and trial-and-error to discover the configurations of lifelike simulations. This paper presents, for the first time, a successful realization of this opportunity using vision-language FMs. The proposed approach, called Automated Search for Artificial Life (ASAL), (1) finds simulations that produce target phenomena, (2) discovers simulations that generate temporally open-ended novelty, and (3) illuminates an entire space of interestingly diverse simulations. Because of the generality of FMs, ASAL works effectively across a diverse range of ALife substrates including Boids, Particle Life, Game of Life, Lenia, and Neural Cellular Automata. A major result highlighting the potential of this technique is the discovery of previously unseen Lenia and Boids lifeforms, as well as cellular automata that are open-ended like Conway's Game of Life. Additionally, the use of FMs allows for the quantification of previously qualitative phenomena in a human-aligned way. This new paradigm promises to accelerate ALife research beyond what is possible through human ingenuity alone.",
+    "added": "2026-02-12"
+  },
+  {
+    "id": "lange2025shinkaevolve",
+    "authors": [
+      "Lange, Robert Tjarko",
+      "Imajuku, Yuki",
+      "Cetin, Edoardo"
+    ],
+    "title": "ShinkaEvolve: Towards Open-Ended And Sample-Efficient Program Evolution",
+    "year": 2025,
+    "arxiv": "2509.19349v1",
+    "venue": "arXiv preprint",
+    "bibtex_type": "preprint",
+    "tags": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "abstract": "We introduce ShinkaEvolve: a new open-source framework leveraging large language models (LLMs) to advance scientific discovery with state-of-the-art performance and unprecedented efficiency. Recent advances in scaling inference time compute of LLMs have enabled significant progress in generalized scientific discovery. These approaches rely on evolutionary agentic harnesses that leverage LLMs as mutation operators to generate candidate solutions. However, current code evolution methods suffer from critical limitations: they are sample inefficient, requiring thousands of samples to identify effective solutions, and remain closed-source, hindering broad adoption and extension. ShinkaEvolve addresses these limitations, introducing three key innovations: a parent sampling technique balancing exploration and exploitation, code novelty rejection-sampling for efficient search space exploration, and a bandit-based LLM ensemble selection strategy. We evaluate ShinkaEvolve across diverse tasks, demonstrating consistent improvements in sample efficiency and solution quality. ShinkaEvolve discovers a new state-of-the-art circle packing solution using only 150 samples, designs high-performing agentic harnesses for AIME mathematical reasoning tasks, identifies improvements to ALE-Bench competitive programming solutions, and discovers novel mixture-of-expert load balancing loss functions that illuminate the space of optimization strategies. Our results demonstrate that ShinkaEvolve achieves broad applicability with exceptional sample efficiency. By providing open-source accessibility and cost-efficiency, this work democratizes open-ended discovery across diverse computational problems.",
+    "added": "2026-02-12"
+  },
+  {
     "id": "luo2025agentmath",
     "authors": [
       "Luo, Haipeng",
@@ -117,6 +263,68 @@
     "added": "2026-02-12"
   },
   {
+    "id": "polu2022formal",
+    "authors": [
+      "Polu, Stanislas",
+      "Han, Jesse Michael",
+      "Zheng, Kunhao",
+      "Baksys, Mantas",
+      "Babuschkin, Igor",
+      "Sutskever, Ilya"
+    ],
+    "title": "Formal Mathematics Statement Curriculum Learning",
+    "year": 2022,
+    "arxiv": "2202.01344v1",
+    "venue": "arXiv preprint",
+    "bibtex_type": "preprint",
+    "tags": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "abstract": "We explore the use of expert iteration in the context of language modeling applied to formal mathematics. We show that at same compute budget, expert iteration, by which we mean proof search interleaved with learning, dramatically outperforms proof search only. We also observe that when applied to a collection of formal statements of sufficiently varied difficulty, expert iteration is capable of finding and solving a curriculum of increasingly difficult problems, without the need for associated ground-truth proofs. Finally, by applying this expert iteration to a manually curated set of problem statements, we achieve state-of-the-art on the miniF2F benchmark, automatically solving multiple challenging problems drawn from high school olympiads.",
+    "added": "2026-02-12"
+  },
+  {
+    "id": "tomaev2025distributional",
+    "authors": [
+      "Tomašev, Nenad",
+      "Franklin, Matija",
+      "Jacobs, Julian",
+      "Krier, Sébastien",
+      "Osindero, Simon"
+    ],
+    "title": "Distributional AGI Safety",
+    "year": 2025,
+    "arxiv": "2512.16856v1",
+    "venue": "arXiv preprint",
+    "bibtex_type": "preprint",
+    "tags": [
+      "cs.AI"
+    ],
+    "abstract": "AI safety and alignment research has predominantly been focused on methods for safeguarding individual AI systems, resting on the assumption of an eventual emergence of a monolithic Artificial General Intelligence (AGI). The alternative AGI emergence hypothesis, where general capability levels are first manifested through coordination in groups of sub-AGI individual agents with complementary skills and affordances, has received far less attention. Here we argue that this patchwork AGI hypothesis needs to be given serious consideration, and should inform the development of corresponding safeguards and mitigations. The rapid deployment of advanced AI agents with tool-use capabilities and the ability to communicate and coordinate makes this an urgent safety consideration. We therefore propose a framework for distributional AGI safety that moves beyond evaluating and aligning individual agents. This framework centers on the design and implementation of virtual agentic sandbox economies (impermeable or semi-permeable), where agent-to-agent transactions are governed by robust market mechanisms, coupled with appropriate auditability, reputation management, and oversight to mitigate collective risks.",
+    "added": "2026-02-12"
+  },
+  {
+    "id": "wynn2025talk",
+    "authors": [
+      "Wynn, Andrea",
+      "Satija, Harsh",
+      "Hadfield, Gillian"
+    ],
+    "title": "Talk Isn't Always Cheap: Understanding Failure Modes in Multi-Agent Debate",
+    "year": 2025,
+    "arxiv": "2509.05396v2",
+    "venue": "arXiv preprint",
+    "bibtex_type": "preprint",
+    "tags": [
+      "cs.CL",
+      "cs.AI",
+      "cs.MA"
+    ],
+    "abstract": "While multi-agent debate has been proposed as a promising strategy for improving AI reasoning ability, we find that debate can sometimes be harmful rather than helpful. Prior work has primarily focused on debates within homogeneous groups of agents, whereas we explore how diversity in model capabilities influences the dynamics and outcomes of multi-agent interactions. Through a series of experiments, we demonstrate that debate can lead to a decrease in accuracy over time - even in settings where stronger (i.e., more capable) models outnumber their weaker counterparts. Our analysis reveals that models frequently shift from correct to incorrect answers in response to peer reasoning, favoring agreement over challenging flawed reasoning. We perform additional experiments investigating various potential contributing factors to these harmful shifts - including sycophancy, social conformity, and model and task type. These results highlight important failure modes in the exchange of reasons during multi-agent debate, suggesting that naive applications of debate may cause performance degradation when agents are neither incentivised nor adequately equipped to resist persuasive but incorrect reasoning.",
+    "added": "2026-02-12"
+  },
+  {
     "id": "xu2024hallucination",
     "authors": [
       "Xu, Ziwei",
@@ -134,6 +342,71 @@
       "cs.LG"
     ],
     "abstract": "Hallucination has been widely recognized to be a significant drawback for large language models (LLMs). There have been many works that attempt to reduce the extent of hallucination. These efforts have mostly been empirical so far, which cannot answer the fundamental question whether it can be completely eliminated. In this paper, we formalize the problem and show that it is impossible to eliminate hallucination in LLMs. Specifically, we define a formal world where hallucination is defined as inconsistencies between a computable LLM and a computable ground truth function. By employing results from learning theory, we show that LLMs cannot learn all the computable functions and will therefore inevitably hallucinate if used as general problem solvers. Since the formal world is a part of the real world which is much more complicated, hallucinations are also inevitable for real world LLMs. Furthermore, for real world LLMs constrained by provable time complexity, we describe the hallucination-prone tasks and empirically validate our claims. Finally, using the formal world framework, we discuss the possible mechanisms and efficacies of existing hallucination mitigators as well as the practical implications on the safe deployment of LLMs.",
+    "added": "2026-02-12"
+  },
+  {
+    "id": "xu2025towards",
+    "authors": [
+      "Xu, Jiacong",
+      "Lo, Shao-Yuan",
+      "Safaei, Bardia",
+      "Patel, Vishal M.",
+      "Dwivedi, Isht"
+    ],
+    "title": "Towards Zero-Shot Anomaly Detection and Reasoning with Multimodal Large Language Models",
+    "year": 2025,
+    "arxiv": "2502.07601v2",
+    "venue": "arXiv preprint",
+    "bibtex_type": "preprint",
+    "tags": [
+      "cs.CV",
+      "cs.CL"
+    ],
+    "abstract": "Zero-Shot Anomaly Detection (ZSAD) is an emerging AD paradigm. Unlike the traditional unsupervised AD setting that requires a large number of normal samples to train a model, ZSAD is more practical for handling data-restricted real-world scenarios. Recently, Multimodal Large Language Models (MLLMs) have shown revolutionary reasoning capabilities in various vision tasks. However, the reasoning of image abnormalities remains underexplored due to the lack of corresponding datasets and benchmarks. To facilitate research in AD &amp; reasoning, we establish the first visual instruction tuning dataset, Anomaly-Instruct-125k, and the evaluation benchmark, VisA-D&amp;R. Through investigation with our benchmark, we reveal that current MLLMs like GPT-4o cannot accurately detect and describe fine-grained anomalous details in images. To address this, we propose Anomaly-OneVision (Anomaly-OV), the first specialist visual assistant for ZSAD and reasoning. Inspired by human behavior in visual inspection, Anomaly-OV leverages a Look-Twice Feature Matching (LTFM) mechanism to adaptively select and emphasize abnormal visual tokens. Extensive experiments demonstrate that Anomaly-OV achieves significant improvements over advanced generalist models in both detection and reasoning. Extensions to medical and 3D AD are provided for future study. The link to our project page: https://xujiacong.github.io/Anomaly-OV/",
+    "added": "2026-02-12"
+  },
+  {
+    "id": "yang2024formal",
+    "authors": [
+      "Yang, Kaiyu",
+      "Poesia, Gabriel",
+      "He, Jingxuan",
+      "Li, Wenda",
+      "Lauter, Kristin",
+      "Chaudhuri, Swarat",
+      "Song, Dawn"
+    ],
+    "title": "Formal Mathematical Reasoning: A New Frontier in AI",
+    "year": 2024,
+    "arxiv": "2412.16075v1",
+    "venue": "arXiv preprint",
+    "bibtex_type": "preprint",
+    "tags": [
+      "cs.AI",
+      "cs.LG",
+      "cs.LO"
+    ],
+    "abstract": "AI for Mathematics (AI4Math) is not only intriguing intellectually but also crucial for AI-driven discovery in science, engineering, and beyond. Extensive efforts on AI4Math have mirrored techniques in NLP, in particular, training large language models on carefully curated math datasets in text form. As a complementary yet less explored avenue, formal mathematical reasoning is grounded in formal systems such as proof assistants, which can verify the correctness of reasoning and provide automatic feedback. In this position paper, we advocate for formal mathematical reasoning and argue that it is indispensable for advancing AI4Math to the next level. In recent years, we have seen steady progress in using AI to perform formal reasoning, including core tasks such as theorem proving and autoformalization, as well as emerging applications such as verifiable generation of code and hardware designs. However, significant challenges remain to be solved for AI to truly master mathematics and achieve broader impact. We summarize existing progress, discuss open challenges, and envision critical milestones to measure future success. At this inflection point for formal mathematical reasoning, we call on the research community to come together to drive transformative advancements in this field.",
+    "added": "2026-02-12"
+  },
+  {
+    "id": "zhang2025darwin",
+    "authors": [
+      "Zhang, Jenny",
+      "Hu, Shengran",
+      "Lu, Cong",
+      "Lange, Robert",
+      "Clune, Jeff"
+    ],
+    "title": "Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents",
+    "year": 2025,
+    "arxiv": "2505.22954v2",
+    "venue": "arXiv preprint",
+    "bibtex_type": "preprint",
+    "tags": [
+      "cs.AI"
+    ],
+    "abstract": "Today's AI systems have human-designed, fixed architectures and cannot autonomously and continuously improve themselves. The advance of AI could itself be automated. If done safely, that would accelerate AI development and allow us to reap its benefits much sooner. Meta-learning can automate the discovery of novel algorithms, but is limited by first-order improvements and the human design of a suitable search space. The Gödel machine proposed a theoretical alternative: a self-improving AI that repeatedly modifies itself in a provably beneficial manner. Unfortunately, proving that most changes are net beneficial is impossible in practice. We introduce the Darwin Gödel Machine (DGM), a self-improving system that iteratively modifies its own code (thereby also improving its ability to modify its own codebase) and empirically validates each change using coding benchmarks. Inspired by Darwinian evolution and open-endedness research, the DGM maintains an archive of generated coding agents. It grows the archive by sampling an agent from it and using a foundation model to create a new, interesting, version of the sampled agent. This open-ended exploration forms a growing tree of diverse, high-quality agents and allows the parallel exploration of many different paths through the search space. Empirically, the DGM automatically improves its coding capabilities (e.g., better code editing tools, long-context window management, peer-review mechanisms), increasing performance on SWE-bench from 20.0% to 50.0%, and on Polyglot from 14.2% to 30.7%. Furthermore, the DGM significantly outperforms baselines without self-improvement or open-ended exploration. All experiments were done with safety precautions (e.g., sandboxing, human oversight). The DGM is a significant step toward self-improving AI, capable of gathering its own stepping stones along paths that unfold into endless innovation.",
     "added": "2026-02-12"
   }
 ]
