@@ -31,30 +31,30 @@ See `schema.json` for the full JSON Schema. Key fields:
 
 ## Usage
 
-### Lookup by ID
+### CLI Commands
+
 ```bash
-jq '.[] | select(.id == "du2019llm_debate")' citations.json
+node scripts/cite.js lookup <id>           # Show entry by ID
+node scripts/cite.js search <term>         # Search titles/authors
+node scripts/cite.js tags <tag>            # Filter by tag
+node scripts/cite.js bibtex <id>...        # Generate BibTeX
+node scripts/cite.js validate              # Validate database
 ```
 
-### Filter by tag
-```bash
-jq '.[] | select(.tags[] | contains("moe"))' citations.json
-```
+### Or use npm scripts
 
-### Search titles
 ```bash
-jq '.[] | select(.title | test("multi.agent"; "i"))' citations.json
-```
-
-### Generate BibTeX
-```bash
-./scripts/to-bibtex.sh du2019llm_debate liang2024debate
+npm run validate
+npm run lookup -- du2019llm_debate
+npm run search -- "multi-agent"
+npm run tags -- moe
+npm run bibtex -- du2019llm_debate liang2024debate
 ```
 
 ## Adding Entries
 
 1. Add to `citations.json`
-2. Validate: `ajv validate -s schema.json -d citations.json`
+2. Validate: `node scripts/cite.js validate`
 3. Commit with descriptive message
 
 ## License
