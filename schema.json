@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "citations-db",
+  "title": "Citation Database",
+  "description": "A collection of academic citations for AI agent reference",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "authors", "title", "year"],
+    "additionalProperties": false,
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9_]*$",
+        "description": "Unique key, e.g. 'banks2012hydrogen'"
+      },
+      "authors": {
+        "type": "array",
+        "items": { "type": "string" },
+        "minItems": 1,
+        "description": "List of authors, 'Last, First' format preferred"
+      },
+      "title": {
+        "type": "string",
+        "minLength": 1
+      },
+      "year": {
+        "type": "integer",
+        "minimum": 1800,
+        "maximum": 2100
+      },
+      "venue": {
+        "type": "string",
+        "description": "Journal, conference, publisher, or preprint server"
+      },
+      "doi": {
+        "type": "string",
+        "pattern": "^10\\."
+      },
+      "arxiv": {
+        "type": "string",
+        "pattern": "^[0-9]{4}\\.[0-9]{4,5}(v[0-9]+)?$",
+        "description": "arXiv ID, e.g. '2301.07041'"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "tags": {
+        "type": "array",
+        "items": { "type": "string" },
+        "uniqueItems": true,
+        "description": "Domain/topic tags for filtering"
+      },
+      "abstract": {
+        "type": "string"
+      },
+      "claims": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Key findings or assertions this paper supports"
+      },
+      "notes": {
+        "type": "string",
+        "description": "Your own commentary or context"
+      },
+      "bibtex_type": {
+        "type": "string",
+        "enum": ["article", "inproceedings", "book", "thesis", "preprint", "techreport", "misc"],
+        "description": "Publication type for BibTeX export"
+      },
+      "pages": { "type": "string" },
+      "volume": { "type": "string" },
+      "issue": { "type": "string" },
+      "publisher": { "type": "string" },
+      "added": {
+        "type": "string",
+        "format": "date",
+        "description": "Date this entry was added to the database"
+      }
+    }
+  },
+  "uniqueItems": true
+}
