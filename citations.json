@@ -1,5 +1,23 @@
 [
   {
+    "id": "guingrich2023chatbots",
+    "authors": [
+      "Guingrich, Rose E.",
+      "Graziano, Michael S. A."
+    ],
+    "title": "Chatbots as social companions: How people perceive consciousness, human likeness, and social health benefits in machines",
+    "year": 2023,
+    "arxiv": "2311.10599v5",
+    "venue": "arXiv preprint",
+    "bibtex_type": "preprint",
+    "tags": [
+      "cs.HC",
+      "cs.AI"
+    ],
+    "abstract": "As artificial intelligence (AI) becomes more widespread, one question that arises is how human-AI interaction might impact human-human interaction. Chatbots, for example, are increasingly used as social companions, and while much is speculated, little is known empirically about how their use impacts human relationships. A common hypothesis is that relationships with companion chatbots are detrimental to social health by harming or replacing human interaction, but this hypothesis may be too simplistic, especially considering the social needs of users and the health of their preexisting human relationships. To understand how relationships with companion chatbots impact social health, we studied people who regularly used companion chatbots and people who did not use them. Contrary to expectations, companion chatbot users indicated that these relationships were beneficial to their social health, whereas non-users viewed them as harmful. Another common assumption is that people perceive conscious, humanlike AI as disturbing and threatening. Among both users and non-users, however, we found the opposite: perceiving companion chatbots as more conscious and humanlike correlated with more positive opinions and more pronounced social health benefits. Detailed accounts from users suggested that these humanlike chatbots may aid social health by supplying reliable and safe interactions, without necessarily harming human relationships, but this may depend on users' preexisting social needs and how they perceive both human likeness and mind in the chatbot.",
+    "added": "2026-02-12"
+  },
+  {
     "id": "jordancochran2026formal",
     "authors": [
       "JordanCochran"
