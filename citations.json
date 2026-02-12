@@ -285,6 +285,29 @@
     "added": "2026-02-12"
   },
   {
+    "id": "song2025detailed",
+    "authors": [
+      "Song, Zhuo-Yang",
+      "Cao, Qing-Hong",
+      "Luo, Ming-xing",
+      "Zhu, Hua Xing"
+    ],
+    "title": "Detailed balance in large language model-driven agents",
+    "year": 2025,
+    "arxiv": "2512.10047v1",
+    "venue": "arXiv preprint",
+    "bibtex_type": "preprint",
+    "tags": [
+      "cs.LG",
+      "cond-mat.stat-mech",
+      "cs.AI",
+      "nlin.AO",
+      "physics.data-an"
+    ],
+    "abstract": "Large language model (LLM)-driven agents are emerging as a powerful new paradigm for solving complex problems. Despite the empirical success of these practices, a theoretical framework to understand and unify their macroscopic dynamics remains lacking. This Letter proposes a method based on the least action principle to estimate the underlying generative directionality of LLMs embedded within agents. By experimentally measuring the transition probabilities between LLM-generated states, we statistically discover a detailed balance in LLM-generated transitions, indicating that LLM generation may not be achieved by generally learning rule sets and strategies, but rather by implicitly learning a class of underlying potential functions that may transcend different LLM architectures and prompt templates. To our knowledge, this is the first discovery of a macroscopic physical law in LLM generative dynamics that does not depend on specific model details. This work is an attempt to establish a macroscopic dynamics theory of complex AI systems, aiming to elevate the study of AI agents from a collection of engineering practices to a science built on effective measurements that are predictable and quantifiable.",
+    "added": "2026-02-12"
+  },
+  {
     "id": "tomaev2025distributional",
     "authors": [
       "Tomašev, Nenad",
