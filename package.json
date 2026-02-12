@@ -8,7 +8,8 @@
     "lookup": "node scripts/cite.js lookup",
     "search": "node scripts/cite.js search",
     "tags": "node scripts/cite.js tags",
-    "bibtex": "node scripts/cite.js bibtex"
+    "bibtex": "node scripts/cite.js bibtex",
+    "add-arxiv": "node scripts/add-arxiv.js"
   },
   "keywords": [
     "citations",

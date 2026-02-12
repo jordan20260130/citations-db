@@ -39,6 +39,7 @@ node scripts/cite.js search <term>         # Search titles/authors
 node scripts/cite.js tags <tag>            # Filter by tag
 node scripts/cite.js bibtex <id>...        # Generate BibTeX
 node scripts/cite.js validate              # Validate database
+node scripts/add-arxiv.js <arxiv_id>       # Add paper from arXiv
 ```
 
 ### Or use npm scripts
@@ -49,11 +50,22 @@ npm run lookup -- du2019llm_debate
 npm run search -- "multi-agent"
 npm run tags -- moe
 npm run bibtex -- du2019llm_debate liang2024debate
+npm run add-arxiv -- 2401.11817
 ```
 
 ## Adding Entries
 
-1. Add to `citations.json`
+### From arXiv (easiest)
+
+```bash
+node scripts/add-arxiv.js 2401.11817
+```
+
+This fetches metadata from arXiv, generates an ID, and inserts the entry in alphabetical order. The arXiv ID always includes the version number (e.g., `2401.11817v2`).
+
+### Manual
+
+1. Add to `citations.json` (keep IDs alphabetical!)
 2. Validate: `node scripts/cite.js validate`
 3. Commit with descriptive message
 
