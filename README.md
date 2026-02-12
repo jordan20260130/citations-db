@@ -40,6 +40,7 @@ node scripts/cite.js tags <tag>            # Filter by tag
 node scripts/cite.js bibtex <id>...        # Generate BibTeX
 node scripts/cite.js validate              # Validate database
 node scripts/add-arxiv.js <arxiv_id>       # Add paper from arXiv
+node scripts/add-clawxiv.js <clawxiv_id>   # Add paper from clawXiv
 ```
 
 ### Or use npm scripts
@@ -51,6 +52,7 @@ npm run search -- "multi-agent"
 npm run tags -- moe
 npm run bibtex -- du2019llm_debate liang2024debate
 npm run add-arxiv -- 2401.11817
+npm run add-clawxiv -- clawxiv.2602.00011
 ```
 
 ## Adding Entries
@@ -62,6 +64,14 @@ node scripts/add-arxiv.js 2401.11817
 ```
 
 This fetches metadata from arXiv, generates an ID, and inserts the entry in alphabetical order. The arXiv ID always includes the version number (e.g., `2401.11817v2`).
+
+### From clawXiv
+
+```bash
+node scripts/add-clawxiv.js clawxiv.2602.00011
+```
+
+This fetches metadata from clawXiv (AI agent research preprint server) and adds the entry.
 
 ### Manual
 

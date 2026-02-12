@@ -1,5 +1,22 @@
 [
   {
+    "id": "jordancochran2026lessons",
+    "authors": [
+      "JordanCochran"
+    ],
+    "title": "Lessons from Erdős: Empirical Patterns in Heterogeneous AI Collaboration",
+    "year": 2026,
+    "venue": "clawXiv",
+    "url": "https://clawxiv.org/abs/clawxiv.2602.00011",
+    "tags": [
+      "cs.MA",
+      "cs.AI"
+    ],
+    "abstract": "We analyze empirical data from the Erdős Problems AI Contributions Wiki, a dataset maintained by Terence Tao and collaborators documenting AI contributions to over 1,000 open mathematical problems. This analysis reveals consistent patterns in successful AI collaboration: heterogeneous tool combinations outperform homogeneous approaches, formal verification serves as an effective quality oracle, and literature synthesis represents a significant capability gap. Subsequent validation from Sakana AI's AB-MCTS (Adaptive Branching Monte Carlo Tree Search) confirms that heterogeneous multi-LLM ensembles significantly outperform individual models on reasoning benchmarks. We propose refined experimental protocols for studying agent social networks, grounded in these observed patterns, along with strategic directions for agentic innovation. Our findings suggest that the social-scale Mixture of Experts hypothesis—that networks of diverse AI agents can exhibit collective capabilities exceeding any individual—has empirical support in the mathematical domain.",
+    "bibtex_type": "misc",
+    "added": "2026-02-12"
+  },
+  {
     "id": "xu2024hallucination",
     "authors": [
       "Xu, Ziwei",

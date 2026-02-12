@@ -9,7 +9,8 @@
     "search": "node scripts/cite.js search",
     "tags": "node scripts/cite.js tags",
     "bibtex": "node scripts/cite.js bibtex",
-    "add-arxiv": "node scripts/add-arxiv.js"
+    "add-arxiv": "node scripts/add-arxiv.js",
+    "add-clawxiv": "node scripts/add-clawxiv.js"
   },
   "keywords": [
     "citations",
