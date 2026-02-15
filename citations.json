@@ -284,6 +284,101 @@
     "added": "2026-02-12"
   },
   {
+    "id": "keiser2007relating",
+    "authors": [
+      "Keiser, Michael J.",
+      "Roth, Bryan L.",
+      "Armbruster, Bryan N.",
+      "Ernsberger, Peter",
+      "Irwin, John J.",
+      "Shoichet, Brian K."
+    ],
+    "title": "Relating protein pharmacology by ligand chemistry",
+    "year": 2007,
+    "venue": "Nature Biotechnology",
+    "volume": "25",
+    "issue": "2",
+    "pages": "197-206",
+    "doi": "10.1038/nbt1284",
+    "bibtex_type": "article",
+    "tags": [
+      "computational pharmacology",
+      "drug discovery",
+      "polypharmacology"
+    ],
+    "abstract": "The Similarity Ensemble Approach (SEA) compares protein targets by the similarity of their ligands, enabling prediction of drug-target interactions across proteins with no sequence or structural similarity. SEA uses BLAST-like statistical scores to identify targets from annotated ligands relative to random background.",
+    "claims": [
+      "Protein targets can be compared by ligand similarity rather than sequence similarity",
+      "The SEA method can predict drug-target interactions across unrelated protein families"
+    ],
+    "added": "2026-02-15"
+  },
+  {
+    "id": "keiser2009predicting",
+    "authors": [
+      "Keiser, Michael J.",
+      "Setola, Vincent",
+      "Irwin, John J.",
+      "Laggner, Christian",
+      "Abbas, Ahmed I.",
+      "Hufeisen, Sandra J.",
+      "Jensen, Niels H.",
+      "Kuijer, Maarten B.",
+      "Matos, Roberto C.",
+      "Tran, Thuy B.",
+      "Whaley, Ryan",
+      "Glennon, Richard A.",
+      "Hert, Jérôme",
+      "Naylor, Kelan L. H.",
+      "Wiesenberger, Jason S.",
+      "Lagnado, André N.",
+      "Shim, Joie",
+      "Shoichet, Brian K.",
+      "Stevens, Brent L.",
+      "Roth, Bryan L."
+    ],
+    "title": "Predicting new molecular targets for known drugs",
+    "year": 2009,
+    "venue": "Nature",
+    "volume": "462",
+    "issue": "7270",
+    "pages": "175-181",
+    "doi": "10.1038/nature08506",
+    "bibtex_type": "article",
+    "tags": [
+      "computational pharmacology",
+      "drug repurposing",
+      "polypharmacology",
+      "side effects"
+    ],
+    "abstract": "A large-scale computational comparison of 3,665 FDA-approved and investigational drugs against hundreds of targets using the Similarity Ensemble Approach predicted thousands of unanticipated drug-target associations. 30 predictions were tested experimentally, with 23 confirmed including the antagonism of the β1 receptor by Prozac and the binding of the HIV drug Rescriptor to the histamine H4 receptor. The physiological relevance of DMT binding to serotonergic receptors was confirmed in knockout mice.",
+    "claims": [
+      "23 of 30 predicted cross-boundary drug-target associations were experimentally confirmed",
+      "DMT's hallucinogenic effects are mediated primarily by 5-HT2A receptors, not σ1 receptors",
+      "SSRIs like Prozac and Paxil bind β-adrenergic receptors, potentially explaining side effects"
+    ],
+    "added": "2026-02-15"
+  },
+  {
+    "id": "keiser2009thesis",
+    "authors": [
+      "Keiser, Michael J."
+    ],
+    "title": "Relating protein pharmacology by ligand chemistry",
+    "year": 2009,
+    "venue": "University of California, San Francisco",
+    "publisher": "ProQuest",
+    "url": "https://escholarship.org/uc/item/5vp5h8g4",
+    "bibtex_type": "thesis",
+    "tags": [
+      "computational pharmacology",
+      "drug discovery",
+      "polypharmacology"
+    ],
+    "notes": "PhD dissertation from which the 2007 Nature Biotechnology and 2009 Nature papers were derived. Contains full methodological details and the complete arc of the SEA research program.",
+    "added": "2026-02-15"
+  },
+  {
     "id": "khadangi2025when",
     "authors": [
       "Khadangi, Afshin",
