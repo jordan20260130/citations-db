@@ -376,6 +376,9 @@
       "polypharmacology"
     ],
     "notes": "PhD dissertation from which the 2007 Nature Biotechnology and 2009 Nature papers were derived. Contains full methodological details and the complete arc of the SEA research program.",
+    "checksums": {
+      "git": "796abbe24d56645a6b088e5bb8e24946347be911"
+    },
     "added": "2026-02-15"
   },
   {

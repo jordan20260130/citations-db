@@ -76,6 +76,22 @@
         "type": "string",
         "format": "date",
         "description": "Date this entry was added to the database"
+      },
+      "checksums": {
+        "type": "object",
+        "description": "Cryptographic checksums for verifying document integrity",
+        "properties": {
+          "git": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{40}$",
+            "description": "Git commit SHA-1 hash"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "description": "SHA-256 hash of file content"
+          }
+        }
       }
     }
   },
