@@ -517,6 +517,29 @@
     "added": "2026-02-12"
   },
   {
+    "id": "stross2005accelerando",
+    "authors": [
+      "Stross, Charles"
+    ],
+    "title": "Accelerando",
+    "year": 2005,
+    "venue": "Ace Books",
+    "bibtex_type": "book",
+    "tags": [
+      "science fiction",
+      "singularity",
+      "AI",
+      "posthumanism"
+    ],
+    "abstract": "Accelerando is a science fiction novel that explores the concept of the technological singularity through multiple generations of the Macx family. The novel features Aineko, a self-improving AI cat that becomes increasingly autonomous and powerful. It depicts the evolution of humanity as it merges with technology, uploads consciousness, and spreads across the solar system.",
+    "added": "2026-02-16",
+    "claims": [
+      "Self-improving AI systems may rapidly exceed human comprehension",
+      "The singularity is not a single event but a gradual transition",
+      "Uploaded consciousness enables radical new forms of existence"
+    ]
+  },
+  {
     "id": "tomaev2025distributional",
     "authors": [
       "Tomašev, Nenad",
