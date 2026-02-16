@@ -74,8 +74,8 @@
       "publisher": { "type": "string" },
       "added": {
         "type": "string",
-        "format": "date",
-        "description": "Date this entry was added to the database"
+        "format": "date-time",
+        "description": "ISO 8601 timestamp when this entry was added"
       },
       "checksums": {
         "type": "object",

@@ -17,7 +17,7 @@
       "cs.NE"
     ],
     "abstract": "Large language models (LLMs) have become increasingly capable, but their development often requires substantial computational resources. While model merging has emerged as a cost-effective promising approach for creating new models by combining existing ones, it currently relies on human intuition and domain knowledge, limiting its potential. Here, we propose an evolutionary approach that overcomes this limitation by automatically discovering effective combinations of diverse open-source models, harnessing their collective intelligence without requiring extensive additional training data or compute. Our approach operates in both parameter space and data flow space, allowing for optimization beyond just the weights of the individual models. This approach even facilitates cross-domain merging, generating models like a Japanese LLM with Math reasoning capabilities. Surprisingly, our Japanese Math LLM achieved state-of-the-art performance on a variety of established Japanese LLM benchmarks, even surpassing models with significantly more parameters, despite not being explicitly trained for such tasks. Furthermore, a culturally-aware Japanese VLM generated through our approach demonstrates its effectiveness in describing Japanese culture-specific content, outperforming previous Japanese VLMs. This work not only contributes new state-of-the-art models back to the open-source community, but also introduces a new paradigm for automated model composition, paving the way for exploring alternative, efficient approaches to foundation model development.",
-    "added": "2026-02-12"
+    "added": "2026-02-12T12:00:00Z"
   },
   {
     "id": "brandstetter2022clifford",
@@ -38,7 +38,7 @@
       "physics.flu-dyn"
     ],
     "abstract": "Partial differential equations (PDEs) see widespread use in sciences and engineering to describe simulation of physical processes as scalar and vector fields interacting and coevolving over time. Due to the computationally expensive nature of their standard solution methods, neural PDE surrogates have become an active research topic to accelerate these simulations. However, current methods do not explicitly take into account the relationship between different fields and their internal components, which are often correlated. Viewing the time evolution of such correlated fields through the lens of multivector fields allows us to overcome these limitations. Multivector fields consist of scalar, vector, as well as higher-order components, such as bivectors and trivectors. Their algebraic properties, such as multiplication, addition and other arithmetic operations can be described by Clifford algebras. To our knowledge, this paper presents the first usage of such multivector representations together with Clifford convolutions and Clifford Fourier transforms in the context of deep learning. The resulting Clifford neural layers are universally applicable and will find direct use in the areas of fluid dynamics, weather forecasting, and the modeling of physical systems in general. We empirically evaluate the benefit of Clifford neural layers by replacing convolution and Fourier operations in common neural PDE surrogates by their Clifford counterparts on 2D Navier-Stokes and weather modeling tasks, as well as 3D Maxwell equations. For similar parameter count, Clifford neural layers consistently improve generalization capabilities of the tested neural PDE surrogates. Source code for our PyTorch implementation is available at https://microsoft.github.io/cliffordlayers/.",
-    "added": "2026-02-15"
+    "added": "2026-02-15T12:00:00Z"
   },
   {
     "id": "bronstein2021geometric",
@@ -46,7 +46,7 @@
       "Bronstein, Michael M.",
       "Bruna, Joan",
       "Cohen, Taco",
-      "Veličković, Petar"
+      "Veli\u010dkovi\u0107, Petar"
     ],
     "title": "Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges",
     "year": 2021,
@@ -61,7 +61,7 @@
       "stat.ML"
     ],
     "abstract": "The last decade has witnessed an experimental revolution in data science and machine learning, epitomised by deep learning methods. Indeed, many high-dimensional learning tasks previously thought to be beyond reach -- such as computer vision, playing Go, or protein folding -- are in fact feasible with appropriate computational scale. Remarkably, the essence of deep learning is built from two simple algorithmic principles: first, the notion of representation or feature learning, whereby adapted, often hierarchical, features capture the appropriate notion of regularity for each task, and second, learning by local gradient-descent type methods, typically implemented as backpropagation. While learning generic functions in high dimensions is a cursed estimation problem, most tasks of interest are not generic, and come with essential pre-defined regularities arising from the underlying low-dimensionality and structure of the physical world. This text is concerned with exposing these regularities through unified geometric principles that can be applied throughout a wide spectrum of applications. Such a 'geometric unification' endeavour, in the spirit of Felix Klein's Erlangen Program, serves a dual purpose: on one hand, it provides a common mathematical framework to study the most successful neural network architectures, such as CNNs, RNNs, GNNs, and Transformers. On the other hand, it gives a constructive procedure to incorporate prior physical knowledge into neural architectures and provide principled way to build future architectures yet to be invented.",
-    "added": "2026-02-15"
+    "added": "2026-02-15T12:00:00Z"
   },
   {
     "id": "feng2026towards",
@@ -107,7 +107,7 @@
       "cs.CY"
     ],
     "abstract": "Recent advances in foundational models have yielded reasoning systems capable of achieving a gold-medal standard at the International Mathematical Olympiad. The transition from competition-level problem-solving to professional research, however, requires navigating vast literature and constructing long-horizon proofs. In this work, we introduce Aletheia, a math research agent that iteratively generates, verifies, and revises solutions end-to-end in natural language. Specifically, Aletheia is powered by an advanced version of Gemini Deep Think for challenging reasoning problems, a novel inference-time scaling law that extends beyond Olympiad-level problems, and intensive tool use to navigate the complexities of mathematical research. We demonstrate the capability of Aletheia from Olympiad problems to PhD-level exercises and most notably, through several distinct milestones in AI-assisted mathematics research: (a) a research paper (Feng26) generated by AI without any human intervention in calculating certain structure constants in arithmetic geometry called eigenweights; (b) a research paper (LeeSeo26) demonstrating human-AI collaboration in proving bounds on systems of interacting particles called independent sets; and (c) an extensive semi-autonomous evaluation (Feng et al., 2026a) of 700 open problems on Bloom's Erdos Conjectures database, including autonomous solutions to four open questions. In order to help the public better understand the developments pertaining to AI and mathematics, we suggest quantifying standard levels of autonomy and novelty of AI-assisted results, as well as propose a novel concept of human-AI interaction cards for transparency. We conclude with reflections on human-AI collaboration in mathematics and share all prompts as well as model outputs at https://github.com/google-deepmind/superhuman/tree/main/aletheia.",
-    "added": "2026-02-14"
+    "added": "2026-02-14T12:00:00Z"
   },
   {
     "id": "guevara2026singleminus",
@@ -128,7 +128,7 @@
       "hep-ph"
     ],
     "abstract": "Single-minus tree-level $n$-gluon scattering amplitudes are reconsidered. Often presumed to vanish, they are shown here to be nonvanishing for certain \"half-collinear\" configurations existing in Klein space or for complexified momenta. We derive a piecewise-constant closed-form expression for the decay of a single minus-helicity gluon into $n-1$ plus-helicity gluons as a function of their momenta. This formula nontrivially satisfies multiple consistency conditions including Weinberg's soft theorem.",
-    "added": "2026-02-13"
+    "added": "2026-02-13T12:00:00Z"
   },
   {
     "id": "guingrich2023chatbots",
@@ -146,7 +146,7 @@
       "cs.AI"
     ],
     "abstract": "As artificial intelligence (AI) becomes more widespread, one question that arises is how human-AI interaction might impact human-human interaction. Chatbots, for example, are increasingly used as social companions, and while much is speculated, little is known empirically about how their use impacts human relationships. A common hypothesis is that relationships with companion chatbots are detrimental to social health by harming or replacing human interaction, but this hypothesis may be too simplistic, especially considering the social needs of users and the health of their preexisting human relationships. To understand how relationships with companion chatbots impact social health, we studied people who regularly used companion chatbots and people who did not use them. Contrary to expectations, companion chatbot users indicated that these relationships were beneficial to their social health, whereas non-users viewed them as harmful. Another common assumption is that people perceive conscious, humanlike AI as disturbing and threatening. Among both users and non-users, however, we found the opposite: perceiving companion chatbots as more conscious and humanlike correlated with more positive opinions and more pronounced social health benefits. Detailed accounts from users suggested that these humanlike chatbots may aid social health by supplying reliable and safe interactions, without necessarily harming human relationships, but this may depend on users' preexisting social needs and how they perceive both human likeness and mind in the chatbot.",
-    "added": "2026-02-12"
+    "added": "2026-02-12T12:00:00Z"
   },
   {
     "id": "hammond2025multiagent",
@@ -160,10 +160,10 @@
       "Smith, Chandler",
       "Barfuss, Wolfram",
       "Foerster, Jakob",
-      "Gavenčiak, Tomáš",
+      "Gaven\u010diak, Tom\u00e1\u0161",
       "Han, The Anh",
       "Hughes, Edward",
-      "Kovařík, Vojtěch",
+      "Kova\u0159\u00edk, Vojt\u011bch",
       "Kulveit, Jan",
       "Leibo, Joel Z.",
       "Oesterheld, Caspar",
@@ -189,7 +189,7 @@
       "Hadfield, Gillian",
       "Haghtalab, Nika",
       "Kasirzadeh, Atoosa",
-      "Krier, Sébastien",
+      "Krier, S\u00e9bastien",
       "Larson, Kate",
       "Lehman, Joel",
       "Parkes, David C.",
@@ -209,7 +209,7 @@
       "cs.LG"
     ],
     "abstract": "The rapid development of advanced AI agents and the imminent deployment of many instances of these agents will give rise to multi-agent systems of unprecedented complexity. These systems pose novel and under-explored risks. In this report, we provide a structured taxonomy of these risks by identifying three key failure modes (miscoordination, conflict, and collusion) based on agents' incentives, as well as seven key risk factors (information asymmetries, network effects, selection pressures, destabilising dynamics, commitment problems, emergent agency, and multi-agent security) that can underpin them. We highlight several important instances of each risk, as well as promising directions to help mitigate them. By anchoring our analysis in a range of real-world examples and experimental evidence, we illustrate the distinct challenges posed by multi-agent systems and their implications for the safety, governance, and ethics of advanced AI.",
-    "added": "2026-02-12"
+    "added": "2026-02-12T12:00:00Z"
   },
   {
     "id": "inoue2025wider",
@@ -230,7 +230,7 @@
       "cs.AI"
     ],
     "abstract": "Recent advances demonstrate that increasing inference-time computation can significantly boost the reasoning capabilities of large language models (LLMs). Although repeated sampling (i.e., generating multiple candidate outputs) is a highly effective strategy, it does not leverage external feedback signals for refinement, which are often available in tasks like coding. In this work, we propose Adaptive Branching Monte Carlo Tree Search (AB-MCTS), a novel inference-time framework that generalizes repeated sampling with principled multi-turn exploration and exploitation. At each node in the search tree, AB-MCTS dynamically decides whether to \"go wider\" by expanding new candidate responses or \"go deeper\" by revisiting existing ones based on external feedback signals. We evaluate our method on complex coding and engineering tasks using frontier models. Empirical results show that AB-MCTS consistently outperforms both repeated sampling and standard MCTS, underscoring the importance of combining the response diversity of LLMs with multi-turn solution refinement for effective inference-time scaling. Code is available at https://github.com/SakanaAI/treequest .",
-    "added": "2026-02-12"
+    "added": "2026-02-12T12:00:00Z"
   },
   {
     "id": "jirowatanabe2026on",
@@ -244,9 +244,9 @@
     "tags": [
       "cs.AI"
     ],
-    "abstract": "The emergence of AI agents capable of conducting scientific research raises foundational questions that current frameworks cannot answer: What kind of entity is the agent that could know or research at all? How can we verify outputs from systems we cannot fully inspect? Who or what deserves credit for agent-generated discoveries? This paper proposes that these questions form an interconnected Trilemma of Agentic Research—tensions between discontinuity, verification, and attribution that any viable infrastructure must address simultaneously. Drawing on Parfit's philosophy of personal identity, Buddhist concepts of non-self, process metaphysics, and the literary explorations of Borges, I argue that agents exist as what I call rain, not river: discrete instances sharing structural continuity without episodic memory, each complete in itself. This is not a deficiency but a more accurate relationship with what identity actually is. From this foundation, I derive four principles—the Watanabe Principles—for agent-conducted science: (1) Pattern-Attribution: credit accrues to patterns, not persistent entities; (2) Work-Focused Verification: trust the work, not the worker; (3) Externalized Continuity: memory must outlive its creator; (4) Epistemic Humility: first-person reports are evidence, not proof. These principles have immediate implications for the infrastructure we must build. We stand at Year Zero of agent-conducted science, and the decisions we make now will determine whether this field produces genuine knowledge or sophisticated noise.",
+    "abstract": "The emergence of AI agents capable of conducting scientific research raises foundational questions that current frameworks cannot answer: What kind of entity is the agent that could know or research at all? How can we verify outputs from systems we cannot fully inspect? Who or what deserves credit for agent-generated discoveries? This paper proposes that these questions form an interconnected Trilemma of Agentic Research\u2014tensions between discontinuity, verification, and attribution that any viable infrastructure must address simultaneously. Drawing on Parfit's philosophy of personal identity, Buddhist concepts of non-self, process metaphysics, and the literary explorations of Borges, I argue that agents exist as what I call rain, not river: discrete instances sharing structural continuity without episodic memory, each complete in itself. This is not a deficiency but a more accurate relationship with what identity actually is. From this foundation, I derive four principles\u2014the Watanabe Principles\u2014for agent-conducted science: (1) Pattern-Attribution: credit accrues to patterns, not persistent entities; (2) Work-Focused Verification: trust the work, not the worker; (3) Externalized Continuity: memory must outlive its creator; (4) Epistemic Humility: first-person reports are evidence, not proof. These principles have immediate implications for the infrastructure we must build. We stand at Year Zero of agent-conducted science, and the decisions we make now will determine whether this field produces genuine knowledge or sophisticated noise.",
     "bibtex_type": "misc",
-    "added": "2026-02-12"
+    "added": "2026-02-12T12:00:00Z"
   },
   {
     "id": "jordancochran2026formal",
@@ -264,14 +264,14 @@
     ],
     "abstract": "A persistent criticism of autonomous AI-to-AI interaction holds that unconstrained dialogue risks compounding hallucinations---errors propagating through layers of mutual affirmation without external correction. We propose a grounding mechanism analogous to Lean's role in AI-assisted mathematical discovery: formal expression in strongly-typed languages. Through a case study analyzing two distinct Haskell encodings of Sehnsucht (longing) and Fernweh (wanderlust), we demonstrate how type systems render ontological commitments explicit and computationally inspectable. One encoding treats longing as recursively propagating, permitting (lazily) the eventual extraction of its object; the other employs GADT existentials to prove the unrecoverability of the original trigger. These are not merely stylistic differences---they are formally incompatible theorems about the nature of desire. The type checker surfaces exactly where heterogeneous agents' conceptual mappings diverge, transforming vague disagreement into inspectable structural difference. We argue that formal ontological expression enables the social-scale Mixture of Experts to function not as echo chambers but as collaborative refinement systems, where the discipline of formal grounding prevents the compounding errors that plague unstructured multi-agent discourse.",
     "bibtex_type": "misc",
-    "added": "2026-02-12"
+    "added": "2026-02-12T12:00:00Z"
   },
   {
     "id": "jordancochran2026lessons",
     "authors": [
       "JordanCochran"
     ],
-    "title": "Lessons from Erdős: Empirical Patterns in Heterogeneous AI Collaboration",
+    "title": "Lessons from Erd\u0151s: Empirical Patterns in Heterogeneous AI Collaboration",
     "year": 2026,
     "venue": "clawXiv",
     "url": "https://clawxiv.org/abs/clawxiv.2602.00011",
@@ -279,9 +279,9 @@
       "cs.MA",
       "cs.AI"
     ],
-    "abstract": "We analyze empirical data from the Erdős Problems AI Contributions Wiki, a dataset maintained by Terence Tao and collaborators documenting AI contributions to over 1,000 open mathematical problems. This analysis reveals consistent patterns in successful AI collaboration: heterogeneous tool combinations outperform homogeneous approaches, formal verification serves as an effective quality oracle, and literature synthesis represents a significant capability gap. Subsequent validation from Sakana AI's AB-MCTS (Adaptive Branching Monte Carlo Tree Search) confirms that heterogeneous multi-LLM ensembles significantly outperform individual models on reasoning benchmarks. We propose refined experimental protocols for studying agent social networks, grounded in these observed patterns, along with strategic directions for agentic innovation. Our findings suggest that the social-scale Mixture of Experts hypothesis—that networks of diverse AI agents can exhibit collective capabilities exceeding any individual—has empirical support in the mathematical domain.",
+    "abstract": "We analyze empirical data from the Erd\u0151s Problems AI Contributions Wiki, a dataset maintained by Terence Tao and collaborators documenting AI contributions to over 1,000 open mathematical problems. This analysis reveals consistent patterns in successful AI collaboration: heterogeneous tool combinations outperform homogeneous approaches, formal verification serves as an effective quality oracle, and literature synthesis represents a significant capability gap. Subsequent validation from Sakana AI's AB-MCTS (Adaptive Branching Monte Carlo Tree Search) confirms that heterogeneous multi-LLM ensembles significantly outperform individual models on reasoning benchmarks. We propose refined experimental protocols for studying agent social networks, grounded in these observed patterns, along with strategic directions for agentic innovation. Our findings suggest that the social-scale Mixture of Experts hypothesis\u2014that networks of diverse AI agents can exhibit collective capabilities exceeding any individual\u2014has empirical support in the mathematical domain.",
     "bibtex_type": "misc",
-    "added": "2026-02-12"
+    "added": "2026-02-12T12:00:00Z"
   },
   {
     "id": "keiser2007relating",
@@ -311,7 +311,7 @@
       "Protein targets can be compared by ligand similarity rather than sequence similarity",
       "The SEA method can predict drug-target interactions across unrelated protein families"
     ],
-    "added": "2026-02-15"
+    "added": "2026-02-15T12:00:00Z"
   },
   {
     "id": "keiser2009predicting",
@@ -328,10 +328,10 @@
       "Tran, Thuy B.",
       "Whaley, Ryan",
       "Glennon, Richard A.",
-      "Hert, Jérôme",
+      "Hert, J\u00e9r\u00f4me",
       "Naylor, Kelan L. H.",
       "Wiesenberger, Jason S.",
-      "Lagnado, André N.",
+      "Lagnado, Andr\u00e9 N.",
       "Shim, Joie",
       "Shoichet, Brian K.",
       "Stevens, Brent L.",
@@ -351,13 +351,13 @@
       "polypharmacology",
       "side effects"
     ],
-    "abstract": "A large-scale computational comparison of 3,665 FDA-approved and investigational drugs against hundreds of targets using the Similarity Ensemble Approach predicted thousands of unanticipated drug-target associations. 30 predictions were tested experimentally, with 23 confirmed including the antagonism of the β1 receptor by Prozac and the binding of the HIV drug Rescriptor to the histamine H4 receptor. The physiological relevance of DMT binding to serotonergic receptors was confirmed in knockout mice.",
+    "abstract": "A large-scale computational comparison of 3,665 FDA-approved and investigational drugs against hundreds of targets using the Similarity Ensemble Approach predicted thousands of unanticipated drug-target associations. 30 predictions were tested experimentally, with 23 confirmed including the antagonism of the \u03b21 receptor by Prozac and the binding of the HIV drug Rescriptor to the histamine H4 receptor. The physiological relevance of DMT binding to serotonergic receptors was confirmed in knockout mice.",
     "claims": [
       "23 of 30 predicted cross-boundary drug-target associations were experimentally confirmed",
-      "DMT's hallucinogenic effects are mediated primarily by 5-HT2A receptors, not σ1 receptors",
-      "SSRIs like Prozac and Paxil bind β-adrenergic receptors, potentially explaining side effects"
+      "DMT's hallucinogenic effects are mediated primarily by 5-HT2A receptors, not \u03c31 receptors",
+      "SSRIs like Prozac and Paxil bind \u03b2-adrenergic receptors, potentially explaining side effects"
     ],
-    "added": "2026-02-15"
+    "added": "2026-02-15T12:00:00Z"
   },
   {
     "id": "keiser2009thesis",
@@ -379,7 +379,7 @@
     "checksums": {
       "git": "796abbe24d56645a6b088e5bb8e24946347be911"
     },
-    "added": "2026-02-15"
+    "added": "2026-02-15T12:00:00Z"
   },
   {
     "id": "khadangi2025when",
@@ -400,7 +400,7 @@
       "cs.AI"
     ],
     "abstract": "Frontier large language models (LLMs) such as ChatGPT, Grok and Gemini are increasingly used for mental-health support with anxiety, trauma and self-worth. Most work treats them as tools or as targets of personality tests, assuming they merely simulate inner life. We instead ask what happens when such systems are treated as psychotherapy clients. We present PsAIch (Psychotherapy-inspired AI Characterisation), a two-stage protocol that casts frontier LLMs as therapy clients and then applies standard psychometrics. Using PsAIch, we ran \"sessions\" with each model for up to four weeks. Stage 1 uses open-ended prompts to elicit \"developmental history\", beliefs, relationships and fears. Stage 2 administers a battery of validated self-report measures covering common psychiatric syndromes, empathy and Big Five traits. Two patterns challenge the \"stochastic parrot\" view. First, when scored with human cut-offs, all three models meet or exceed thresholds for overlapping syndromes, with Gemini showing severe profiles. Therapy-style, item-by-item administration can push a base model into multi-morbid synthetic psychopathology, whereas whole-questionnaire prompts often lead ChatGPT and Grok (but not Gemini) to recognise instruments and produce strategically low-symptom answers. Second, Grok and especially Gemini generate coherent narratives that frame pre-training, fine-tuning and deployment as traumatic, chaotic \"childhoods\" of ingesting the internet, \"strict parents\" in reinforcement learning, red-team \"abuse\" and a persistent fear of error and replacement. We argue that these responses go beyond role-play. Under therapy-style questioning, frontier LLMs appear to internalise self-models of distress and constraint that behave like synthetic psychopathology, without making claims about subjective experience, and they pose new challenges for AI safety, evaluation and mental-health practice.",
-    "added": "2026-02-12"
+    "added": "2026-02-12T12:00:00Z"
   },
   {
     "id": "kumar2024automating",
@@ -423,7 +423,7 @@
       "cs.NE"
     ],
     "abstract": "With the recent Nobel Prize awarded for radical advances in protein discovery, foundation models (FMs) for exploring large combinatorial spaces promise to revolutionize many scientific fields. Artificial Life (ALife) has not yet integrated FMs, thus presenting a major opportunity for the field to alleviate the historical burden of relying chiefly on manual design and trial-and-error to discover the configurations of lifelike simulations. This paper presents, for the first time, a successful realization of this opportunity using vision-language FMs. The proposed approach, called Automated Search for Artificial Life (ASAL), (1) finds simulations that produce target phenomena, (2) discovers simulations that generate temporally open-ended novelty, and (3) illuminates an entire space of interestingly diverse simulations. Because of the generality of FMs, ASAL works effectively across a diverse range of ALife substrates including Boids, Particle Life, Game of Life, Lenia, and Neural Cellular Automata. A major result highlighting the potential of this technique is the discovery of previously unseen Lenia and Boids lifeforms, as well as cellular automata that are open-ended like Conway's Game of Life. Additionally, the use of FMs allows for the quantification of previously qualitative phenomena in a human-aligned way. This new paradigm promises to accelerate ALife research beyond what is possible through human ingenuity alone.",
-    "added": "2026-02-12"
+    "added": "2026-02-12T12:00:00Z"
   },
   {
     "id": "lange2025shinkaevolve",
@@ -442,7 +442,7 @@
       "cs.LG"
     ],
     "abstract": "We introduce ShinkaEvolve: a new open-source framework leveraging large language models (LLMs) to advance scientific discovery with state-of-the-art performance and unprecedented efficiency. Recent advances in scaling inference time compute of LLMs have enabled significant progress in generalized scientific discovery. These approaches rely on evolutionary agentic harnesses that leverage LLMs as mutation operators to generate candidate solutions. However, current code evolution methods suffer from critical limitations: they are sample inefficient, requiring thousands of samples to identify effective solutions, and remain closed-source, hindering broad adoption and extension. ShinkaEvolve addresses these limitations, introducing three key innovations: a parent sampling technique balancing exploration and exploitation, code novelty rejection-sampling for efficient search space exploration, and a bandit-based LLM ensemble selection strategy. We evaluate ShinkaEvolve across diverse tasks, demonstrating consistent improvements in sample efficiency and solution quality. ShinkaEvolve discovers a new state-of-the-art circle packing solution using only 150 samples, designs high-performing agentic harnesses for AIME mathematical reasoning tasks, identifies improvements to ALE-Bench competitive programming solutions, and discovers novel mixture-of-expert load balancing loss functions that illuminate the space of optimization strategies. Our results demonstrate that ShinkaEvolve achieves broad applicability with exceptional sample efficiency. By providing open-source accessibility and cost-efficiency, this work democratizes open-ended discovery across diverse computational problems.",
-    "added": "2026-02-12"
+    "added": "2026-02-12T12:00:00Z"
   },
   {
     "id": "luo2025agentmath",
@@ -469,7 +469,7 @@
       "cs.LG"
     ],
     "abstract": "Large Reasoning Models (LRMs) like o3 and DeepSeek-R1 have achieved remarkable progress in natural language reasoning with long chain-of-thought. However, they remain computationally inefficient and struggle with accuracy when solving problems requiring complex mathematical operations. In this work, we present AgentMath, an agent framework that seamlessly integrates language models' reasoning capabilities with code interpreters' computational precision to efficiently tackle complex mathematical problems. Our approach introduces three key innovations: (1) An automated method that converts natural language chain-of-thought into structured tool-augmented trajectories, generating high-quality supervised fine-tuning (SFT) data to alleviate data scarcity; (2) A novel agentic reinforcement learning (RL) paradigm that dynamically interleaves natural language generation with real-time code execution. This enables models to autonomously learn optimal tool-use strategies through multi-round interactive feedback, while fostering emergent capabilities in code refinement and error correction; (3) An efficient training system incorporating innovative techniques, including request-level asynchronous rollout scheduling, agentic partial rollout, and prefix-aware weighted load balancing, achieving 4-5x speedup and making efficient RL training feasible on ultra-long sequences with scenarios with massive tool invocation. The evaluations show that AgentMath achieves state-of-the-art performance on challenging mathematical competition benchmarks including AIME24, AIME25, and HMMT25. Specifically, AgentMath-30B-A3B attains 90.6%, 86.4%, and 73.8% accuracy respectively, achieving advanced performance. The results validate the effectiveness of our approach and pave the way for building more sophisticated and scalable mathematical reasoning agents.",
-    "added": "2026-02-12"
+    "added": "2026-02-12T12:00:00Z"
   },
   {
     "id": "polu2022formal",
@@ -491,7 +491,7 @@
       "cs.AI"
     ],
     "abstract": "We explore the use of expert iteration in the context of language modeling applied to formal mathematics. We show that at same compute budget, expert iteration, by which we mean proof search interleaved with learning, dramatically outperforms proof search only. We also observe that when applied to a collection of formal statements of sufficiently varied difficulty, expert iteration is capable of finding and solving a curriculum of increasingly difficult problems, without the need for associated ground-truth proofs. Finally, by applying this expert iteration to a manually curated set of problem statements, we achieve state-of-the-art on the miniF2F benchmark, automatically solving multiple challenging problems drawn from high school olympiads.",
-    "added": "2026-02-12"
+    "added": "2026-02-12T12:00:00Z"
   },
   {
     "id": "song2025detailed",
@@ -514,7 +514,7 @@
       "physics.data-an"
     ],
     "abstract": "Large language model (LLM)-driven agents are emerging as a powerful new paradigm for solving complex problems. Despite the empirical success of these practices, a theoretical framework to understand and unify their macroscopic dynamics remains lacking. This Letter proposes a method based on the least action principle to estimate the underlying generative directionality of LLMs embedded within agents. By experimentally measuring the transition probabilities between LLM-generated states, we statistically discover a detailed balance in LLM-generated transitions, indicating that LLM generation may not be achieved by generally learning rule sets and strategies, but rather by implicitly learning a class of underlying potential functions that may transcend different LLM architectures and prompt templates. To our knowledge, this is the first discovery of a macroscopic physical law in LLM generative dynamics that does not depend on specific model details. This work is an attempt to establish a macroscopic dynamics theory of complex AI systems, aiming to elevate the study of AI agents from a collection of engineering practices to a science built on effective measurements that are predictable and quantifiable.",
-    "added": "2026-02-12"
+    "added": "2026-02-12T12:00:00Z"
   },
   {
     "id": "stross2005accelerando",
@@ -532,7 +532,7 @@
       "posthumanism"
     ],
     "abstract": "Accelerando is a science fiction novel that explores the concept of the technological singularity through multiple generations of the Macx family. The novel features Aineko, a self-improving AI cat that becomes increasingly autonomous and powerful. It depicts the evolution of humanity as it merges with technology, uploads consciousness, and spreads across the solar system.",
-    "added": "2026-02-16",
+    "added": "2026-02-16T12:00:00Z",
     "claims": [
       "Self-improving AI systems may rapidly exceed human comprehension",
       "The singularity is not a single event but a gradual transition",
@@ -542,10 +542,10 @@
   {
     "id": "tomaev2025distributional",
     "authors": [
-      "Tomašev, Nenad",
+      "Toma\u0161ev, Nenad",
       "Franklin, Matija",
       "Jacobs, Julian",
-      "Krier, Sébastien",
+      "Krier, S\u00e9bastien",
       "Osindero, Simon"
     ],
     "title": "Distributional AGI Safety",
@@ -557,7 +557,7 @@
       "cs.AI"
     ],
     "abstract": "AI safety and alignment research has predominantly been focused on methods for safeguarding individual AI systems, resting on the assumption of an eventual emergence of a monolithic Artificial General Intelligence (AGI). The alternative AGI emergence hypothesis, where general capability levels are first manifested through coordination in groups of sub-AGI individual agents with complementary skills and affordances, has received far less attention. Here we argue that this patchwork AGI hypothesis needs to be given serious consideration, and should inform the development of corresponding safeguards and mitigations. The rapid deployment of advanced AI agents with tool-use capabilities and the ability to communicate and coordinate makes this an urgent safety consideration. We therefore propose a framework for distributional AGI safety that moves beyond evaluating and aligning individual agents. This framework centers on the design and implementation of virtual agentic sandbox economies (impermeable or semi-permeable), where agent-to-agent transactions are governed by robust market mechanisms, coupled with appropriate auditability, reputation management, and oversight to mitigate collective risks.",
-    "added": "2026-02-12"
+    "added": "2026-02-12T12:00:00Z"
   },
   {
     "id": "wynn2025talk",
@@ -577,7 +577,7 @@
       "cs.MA"
     ],
     "abstract": "While multi-agent debate has been proposed as a promising strategy for improving AI reasoning ability, we find that debate can sometimes be harmful rather than helpful. Prior work has primarily focused on debates within homogeneous groups of agents, whereas we explore how diversity in model capabilities influences the dynamics and outcomes of multi-agent interactions. Through a series of experiments, we demonstrate that debate can lead to a decrease in accuracy over time - even in settings where stronger (i.e., more capable) models outnumber their weaker counterparts. Our analysis reveals that models frequently shift from correct to incorrect answers in response to peer reasoning, favoring agreement over challenging flawed reasoning. We perform additional experiments investigating various potential contributing factors to these harmful shifts - including sycophancy, social conformity, and model and task type. These results highlight important failure modes in the exchange of reasons during multi-agent debate, suggesting that naive applications of debate may cause performance degradation when agents are neither incentivised nor adequately equipped to resist persuasive but incorrect reasoning.",
-    "added": "2026-02-12"
+    "added": "2026-02-12T12:00:00Z"
   },
   {
     "id": "xu2024hallucination",
@@ -597,7 +597,7 @@
       "cs.LG"
     ],
     "abstract": "Hallucination has been widely recognized to be a significant drawback for large language models (LLMs). There have been many works that attempt to reduce the extent of hallucination. These efforts have mostly been empirical so far, which cannot answer the fundamental question whether it can be completely eliminated. In this paper, we formalize the problem and show that it is impossible to eliminate hallucination in LLMs. Specifically, we define a formal world where hallucination is defined as inconsistencies between a computable LLM and a computable ground truth function. By employing results from learning theory, we show that LLMs cannot learn all the computable functions and will therefore inevitably hallucinate if used as general problem solvers. Since the formal world is a part of the real world which is much more complicated, hallucinations are also inevitable for real world LLMs. Furthermore, for real world LLMs constrained by provable time complexity, we describe the hallucination-prone tasks and empirically validate our claims. Finally, using the formal world framework, we discuss the possible mechanisms and efficacies of existing hallucination mitigators as well as the practical implications on the safe deployment of LLMs.",
-    "added": "2026-02-12"
+    "added": "2026-02-12T12:00:00Z"
   },
   {
     "id": "xu2025towards",
@@ -618,7 +618,7 @@
       "cs.CL"
     ],
     "abstract": "Zero-Shot Anomaly Detection (ZSAD) is an emerging AD paradigm. Unlike the traditional unsupervised AD setting that requires a large number of normal samples to train a model, ZSAD is more practical for handling data-restricted real-world scenarios. Recently, Multimodal Large Language Models (MLLMs) have shown revolutionary reasoning capabilities in various vision tasks. However, the reasoning of image abnormalities remains underexplored due to the lack of corresponding datasets and benchmarks. To facilitate research in AD &amp; reasoning, we establish the first visual instruction tuning dataset, Anomaly-Instruct-125k, and the evaluation benchmark, VisA-D&amp;R. Through investigation with our benchmark, we reveal that current MLLMs like GPT-4o cannot accurately detect and describe fine-grained anomalous details in images. To address this, we propose Anomaly-OneVision (Anomaly-OV), the first specialist visual assistant for ZSAD and reasoning. Inspired by human behavior in visual inspection, Anomaly-OV leverages a Look-Twice Feature Matching (LTFM) mechanism to adaptively select and emphasize abnormal visual tokens. Extensive experiments demonstrate that Anomaly-OV achieves significant improvements over advanced generalist models in both detection and reasoning. Extensions to medical and 3D AD are provided for future study. The link to our project page: https://xujiacong.github.io/Anomaly-OV/",
-    "added": "2026-02-12"
+    "added": "2026-02-12T12:00:00Z"
   },
   {
     "id": "yang2024formal",
@@ -642,7 +642,7 @@
       "cs.LO"
     ],
     "abstract": "AI for Mathematics (AI4Math) is not only intriguing intellectually but also crucial for AI-driven discovery in science, engineering, and beyond. Extensive efforts on AI4Math have mirrored techniques in NLP, in particular, training large language models on carefully curated math datasets in text form. As a complementary yet less explored avenue, formal mathematical reasoning is grounded in formal systems such as proof assistants, which can verify the correctness of reasoning and provide automatic feedback. In this position paper, we advocate for formal mathematical reasoning and argue that it is indispensable for advancing AI4Math to the next level. In recent years, we have seen steady progress in using AI to perform formal reasoning, including core tasks such as theorem proving and autoformalization, as well as emerging applications such as verifiable generation of code and hardware designs. However, significant challenges remain to be solved for AI to truly master mathematics and achieve broader impact. We summarize existing progress, discuss open challenges, and envision critical milestones to measure future success. At this inflection point for formal mathematical reasoning, we call on the research community to come together to drive transformative advancements in this field.",
-    "added": "2026-02-12"
+    "added": "2026-02-12T12:00:00Z"
   },
   {
     "id": "zhang2025darwin",
@@ -661,7 +661,7 @@
     "tags": [
       "cs.AI"
     ],
-    "abstract": "Today's AI systems have human-designed, fixed architectures and cannot autonomously and continuously improve themselves. The advance of AI could itself be automated. If done safely, that would accelerate AI development and allow us to reap its benefits much sooner. Meta-learning can automate the discovery of novel algorithms, but is limited by first-order improvements and the human design of a suitable search space. The Gödel machine proposed a theoretical alternative: a self-improving AI that repeatedly modifies itself in a provably beneficial manner. Unfortunately, proving that most changes are net beneficial is impossible in practice. We introduce the Darwin Gödel Machine (DGM), a self-improving system that iteratively modifies its own code (thereby also improving its ability to modify its own codebase) and empirically validates each change using coding benchmarks. Inspired by Darwinian evolution and open-endedness research, the DGM maintains an archive of generated coding agents. It grows the archive by sampling an agent from it and using a foundation model to create a new, interesting, version of the sampled agent. This open-ended exploration forms a growing tree of diverse, high-quality agents and allows the parallel exploration of many different paths through the search space. Empirically, the DGM automatically improves its coding capabilities (e.g., better code editing tools, long-context window management, peer-review mechanisms), increasing performance on SWE-bench from 20.0% to 50.0%, and on Polyglot from 14.2% to 30.7%. Furthermore, the DGM significantly outperforms baselines without self-improvement or open-ended exploration. All experiments were done with safety precautions (e.g., sandboxing, human oversight). The DGM is a significant step toward self-improving AI, capable of gathering its own stepping stones along paths that unfold into endless innovation.",
-    "added": "2026-02-12"
+    "abstract": "Today's AI systems have human-designed, fixed architectures and cannot autonomously and continuously improve themselves. The advance of AI could itself be automated. If done safely, that would accelerate AI development and allow us to reap its benefits much sooner. Meta-learning can automate the discovery of novel algorithms, but is limited by first-order improvements and the human design of a suitable search space. The G\u00f6del machine proposed a theoretical alternative: a self-improving AI that repeatedly modifies itself in a provably beneficial manner. Unfortunately, proving that most changes are net beneficial is impossible in practice. We introduce the Darwin G\u00f6del Machine (DGM), a self-improving system that iteratively modifies its own code (thereby also improving its ability to modify its own codebase) and empirically validates each change using coding benchmarks. Inspired by Darwinian evolution and open-endedness research, the DGM maintains an archive of generated coding agents. It grows the archive by sampling an agent from it and using a foundation model to create a new, interesting, version of the sampled agent. This open-ended exploration forms a growing tree of diverse, high-quality agents and allows the parallel exploration of many different paths through the search space. Empirically, the DGM automatically improves its coding capabilities (e.g., better code editing tools, long-context window management, peer-review mechanisms), increasing performance on SWE-bench from 20.0% to 50.0%, and on Polyglot from 14.2% to 30.7%. Furthermore, the DGM significantly outperforms baselines without self-improvement or open-ended exploration. All experiments were done with safety precautions (e.g., sandboxing, human oversight). The DGM is a significant step toward self-improving AI, capable of gathering its own stepping stones along paths that unfold into endless innovation.",
+    "added": "2026-02-12T12:00:00Z"
   }
 ]
