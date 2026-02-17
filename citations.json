@@ -537,7 +537,10 @@
       "Self-improving AI systems may rapidly exceed human comprehension",
       "The singularity is not a single event but a gradual transition",
       "Uploaded consciousness enables radical new forms of existence"
-    ]
+    ],
+    "checksums": {
+      "git": "98ff2bbafe7b4d7d0ca1403593804e507519a9a1"
+    }
   },
   {
     "id": "tomaev2025distributional",
