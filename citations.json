@@ -212,6 +212,27 @@
     "added": "2026-02-12T12:00:00Z"
   },
   {
+    "id": "hottbook",
+    "authors": [
+      "The Univalent Foundations Program"
+    ],
+    "title": "Homotopy Type Theory: Univalent Foundations of Mathematics",
+    "year": 2013,
+    "publisher": "https://homotopytypetheory.org/book",
+    "venue": "Institute for Advanced Study",
+    "url": "https://homotopytypetheory.org/book",
+    "bibtex_type": "book",
+    "tags": [
+      "homotopy-type-theory",
+      "univalent-foundations",
+      "type-theory",
+      "mathematics",
+      "cubical"
+    ],
+    "abstract": "The foundational text on homotopy type theory, exploring the deep connections between homotopy theory and type theory through the univalence axiom. Develops a new foundational system for mathematics that is both computationally tractable and homotopically meaningful. Covers dependent type theory, homotopy theory basics, equivalences, the univalence axiom, higher inductive types, and applications to mathematics.",
+    "added": "2026-02-20T18:45:00Z"
+  },
+  {
     "id": "inoue2025wider",
     "authors": [
       "Inoue, Yuichi",
