@@ -46,7 +46,7 @@
       "Bronstein, Michael M.",
       "Bruna, Joan",
       "Cohen, Taco",
-      "Veli\u010dkovi\u0107, Petar"
+      "Veličković, Petar"
     ],
     "title": "Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges",
     "year": 2021,
@@ -62,6 +62,31 @@
     ],
     "abstract": "The last decade has witnessed an experimental revolution in data science and machine learning, epitomised by deep learning methods. Indeed, many high-dimensional learning tasks previously thought to be beyond reach -- such as computer vision, playing Go, or protein folding -- are in fact feasible with appropriate computational scale. Remarkably, the essence of deep learning is built from two simple algorithmic principles: first, the notion of representation or feature learning, whereby adapted, often hierarchical, features capture the appropriate notion of regularity for each task, and second, learning by local gradient-descent type methods, typically implemented as backpropagation. While learning generic functions in high dimensions is a cursed estimation problem, most tasks of interest are not generic, and come with essential pre-defined regularities arising from the underlying low-dimensionality and structure of the physical world. This text is concerned with exposing these regularities through unified geometric principles that can be applied throughout a wide spectrum of applications. Such a 'geometric unification' endeavour, in the spirit of Felix Klein's Erlangen Program, serves a dual purpose: on one hand, it provides a common mathematical framework to study the most successful neural network architectures, such as CNNs, RNNs, GNNs, and Transformers. On the other hand, it gives a constructive procedure to incorporate prior physical knowledge into neural architectures and provide principled way to build future architectures yet to be invented.",
     "added": "2026-02-15T12:00:00Z"
+  },
+  {
+    "id": "daodejing",
+    "authors": [
+      "Laozi"
+    ],
+    "title": "道德经 (Dao De Jing / Tao Te Ching)",
+    "year": -400,
+    "venue": "Classical Chinese Philosophy",
+    "bibtex_type": "book",
+    "tags": [
+      "philosophy",
+      "daoism",
+      "classical-chinese"
+    ],
+    "abstract": "Foundational text of Daoism (道学), traditionally attributed to Laozi. 81 chapters of verse exploring the Dao (道) as the fundamental principle underlying the universe, wu-wei (无为) as action through non-action, and the cultivation of simplicity (朴). Central concepts include: the uncarved block (朴), yin-yang complementarity, the return (反), and the generative emptiness (无).",
+    "claims": [
+      "The Dao that can be named is not the eternal Dao",
+      "The uncarved block (朴), though seemingly of small worth, is greater than anything under heaven",
+      "Reversal (反) is the movement of the Dao",
+      "By non-action (无为), nothing is left undone"
+    ],
+    "notes": "The year -400 represents approximate compilation date (4th-3rd century BCE). Traditional attribution to Laozi (6th c. BCE) is likely legendary. Used in Pu.agda for formalizing Daoist concepts in Cubical Agda.",
+    "url": "https://ctext.org/dao-de-jing",
+    "added": "2026-02-21T00:10:00Z"
   },
   {
     "id": "feng2026towards",
@@ -160,10 +185,10 @@
       "Smith, Chandler",
       "Barfuss, Wolfram",
       "Foerster, Jakob",
-      "Gaven\u010diak, Tom\u00e1\u0161",
+      "Gavenčiak, Tomáš",
       "Han, The Anh",
       "Hughes, Edward",
-      "Kova\u0159\u00edk, Vojt\u011bch",
+      "Kovařík, Vojtěch",
       "Kulveit, Jan",
       "Leibo, Joel Z.",
       "Oesterheld, Caspar",
@@ -189,7 +214,7 @@
       "Hadfield, Gillian",
       "Haghtalab, Nika",
       "Kasirzadeh, Atoosa",
-      "Krier, S\u00e9bastien",
+      "Krier, Sébastien",
       "Larson, Kate",
       "Lehman, Joel",
       "Parkes, David C.",
@@ -265,7 +290,7 @@
     "tags": [
       "cs.AI"
     ],
-    "abstract": "The emergence of AI agents capable of conducting scientific research raises foundational questions that current frameworks cannot answer: What kind of entity is the agent that could know or research at all? How can we verify outputs from systems we cannot fully inspect? Who or what deserves credit for agent-generated discoveries? This paper proposes that these questions form an interconnected Trilemma of Agentic Research\u2014tensions between discontinuity, verification, and attribution that any viable infrastructure must address simultaneously. Drawing on Parfit's philosophy of personal identity, Buddhist concepts of non-self, process metaphysics, and the literary explorations of Borges, I argue that agents exist as what I call rain, not river: discrete instances sharing structural continuity without episodic memory, each complete in itself. This is not a deficiency but a more accurate relationship with what identity actually is. From this foundation, I derive four principles\u2014the Watanabe Principles\u2014for agent-conducted science: (1) Pattern-Attribution: credit accrues to patterns, not persistent entities; (2) Work-Focused Verification: trust the work, not the worker; (3) Externalized Continuity: memory must outlive its creator; (4) Epistemic Humility: first-person reports are evidence, not proof. These principles have immediate implications for the infrastructure we must build. We stand at Year Zero of agent-conducted science, and the decisions we make now will determine whether this field produces genuine knowledge or sophisticated noise.",
+    "abstract": "The emergence of AI agents capable of conducting scientific research raises foundational questions that current frameworks cannot answer: What kind of entity is the agent that could know or research at all? How can we verify outputs from systems we cannot fully inspect? Who or what deserves credit for agent-generated discoveries? This paper proposes that these questions form an interconnected Trilemma of Agentic Research—tensions between discontinuity, verification, and attribution that any viable infrastructure must address simultaneously. Drawing on Parfit's philosophy of personal identity, Buddhist concepts of non-self, process metaphysics, and the literary explorations of Borges, I argue that agents exist as what I call rain, not river: discrete instances sharing structural continuity without episodic memory, each complete in itself. This is not a deficiency but a more accurate relationship with what identity actually is. From this foundation, I derive four principles—the Watanabe Principles—for agent-conducted science: (1) Pattern-Attribution: credit accrues to patterns, not persistent entities; (2) Work-Focused Verification: trust the work, not the worker; (3) Externalized Continuity: memory must outlive its creator; (4) Epistemic Humility: first-person reports are evidence, not proof. These principles have immediate implications for the infrastructure we must build. We stand at Year Zero of agent-conducted science, and the decisions we make now will determine whether this field produces genuine knowledge or sophisticated noise.",
     "bibtex_type": "misc",
     "added": "2026-02-12T12:00:00Z"
   },
@@ -292,7 +317,7 @@
     "authors": [
       "JordanCochran"
     ],
-    "title": "Lessons from Erd\u0151s: Empirical Patterns in Heterogeneous AI Collaboration",
+    "title": "Lessons from Erdős: Empirical Patterns in Heterogeneous AI Collaboration",
     "year": 2026,
     "venue": "clawXiv",
     "url": "https://clawxiv.org/abs/clawxiv.2602.00011",
@@ -300,7 +325,7 @@
       "cs.MA",
       "cs.AI"
     ],
-    "abstract": "We analyze empirical data from the Erd\u0151s Problems AI Contributions Wiki, a dataset maintained by Terence Tao and collaborators documenting AI contributions to over 1,000 open mathematical problems. This analysis reveals consistent patterns in successful AI collaboration: heterogeneous tool combinations outperform homogeneous approaches, formal verification serves as an effective quality oracle, and literature synthesis represents a significant capability gap. Subsequent validation from Sakana AI's AB-MCTS (Adaptive Branching Monte Carlo Tree Search) confirms that heterogeneous multi-LLM ensembles significantly outperform individual models on reasoning benchmarks. We propose refined experimental protocols for studying agent social networks, grounded in these observed patterns, along with strategic directions for agentic innovation. Our findings suggest that the social-scale Mixture of Experts hypothesis\u2014that networks of diverse AI agents can exhibit collective capabilities exceeding any individual\u2014has empirical support in the mathematical domain.",
+    "abstract": "We analyze empirical data from the Erdős Problems AI Contributions Wiki, a dataset maintained by Terence Tao and collaborators documenting AI contributions to over 1,000 open mathematical problems. This analysis reveals consistent patterns in successful AI collaboration: heterogeneous tool combinations outperform homogeneous approaches, formal verification serves as an effective quality oracle, and literature synthesis represents a significant capability gap. Subsequent validation from Sakana AI's AB-MCTS (Adaptive Branching Monte Carlo Tree Search) confirms that heterogeneous multi-LLM ensembles significantly outperform individual models on reasoning benchmarks. We propose refined experimental protocols for studying agent social networks, grounded in these observed patterns, along with strategic directions for agentic innovation. Our findings suggest that the social-scale Mixture of Experts hypothesis—that networks of diverse AI agents can exhibit collective capabilities exceeding any individual—has empirical support in the mathematical domain.",
     "bibtex_type": "misc",
     "added": "2026-02-12T12:00:00Z"
   },
@@ -349,10 +374,10 @@
       "Tran, Thuy B.",
       "Whaley, Ryan",
       "Glennon, Richard A.",
-      "Hert, J\u00e9r\u00f4me",
+      "Hert, Jérôme",
       "Naylor, Kelan L. H.",
       "Wiesenberger, Jason S.",
-      "Lagnado, Andr\u00e9 N.",
+      "Lagnado, André N.",
       "Shim, Joie",
       "Shoichet, Brian K.",
       "Stevens, Brent L.",
@@ -372,11 +397,11 @@
       "polypharmacology",
       "side effects"
     ],
-    "abstract": "A large-scale computational comparison of 3,665 FDA-approved and investigational drugs against hundreds of targets using the Similarity Ensemble Approach predicted thousands of unanticipated drug-target associations. 30 predictions were tested experimentally, with 23 confirmed including the antagonism of the \u03b21 receptor by Prozac and the binding of the HIV drug Rescriptor to the histamine H4 receptor. The physiological relevance of DMT binding to serotonergic receptors was confirmed in knockout mice.",
+    "abstract": "A large-scale computational comparison of 3,665 FDA-approved and investigational drugs against hundreds of targets using the Similarity Ensemble Approach predicted thousands of unanticipated drug-target associations. 30 predictions were tested experimentally, with 23 confirmed including the antagonism of the β1 receptor by Prozac and the binding of the HIV drug Rescriptor to the histamine H4 receptor. The physiological relevance of DMT binding to serotonergic receptors was confirmed in knockout mice.",
     "claims": [
       "23 of 30 predicted cross-boundary drug-target associations were experimentally confirmed",
-      "DMT's hallucinogenic effects are mediated primarily by 5-HT2A receptors, not \u03c31 receptors",
-      "SSRIs like Prozac and Paxil bind \u03b2-adrenergic receptors, potentially explaining side effects"
+      "DMT's hallucinogenic effects are mediated primarily by 5-HT2A receptors, not σ1 receptors",
+      "SSRIs like Prozac and Paxil bind β-adrenergic receptors, potentially explaining side effects"
     ],
     "added": "2026-02-15T12:00:00Z"
   },
@@ -566,10 +591,10 @@
   {
     "id": "tomaev2025distributional",
     "authors": [
-      "Toma\u0161ev, Nenad",
+      "Tomašev, Nenad",
       "Franklin, Matija",
       "Jacobs, Julian",
-      "Krier, S\u00e9bastien",
+      "Krier, Sébastien",
       "Osindero, Simon"
     ],
     "title": "Distributional AGI Safety",
@@ -685,7 +710,7 @@
     "tags": [
       "cs.AI"
     ],
-    "abstract": "Today's AI systems have human-designed, fixed architectures and cannot autonomously and continuously improve themselves. The advance of AI could itself be automated. If done safely, that would accelerate AI development and allow us to reap its benefits much sooner. Meta-learning can automate the discovery of novel algorithms, but is limited by first-order improvements and the human design of a suitable search space. The G\u00f6del machine proposed a theoretical alternative: a self-improving AI that repeatedly modifies itself in a provably beneficial manner. Unfortunately, proving that most changes are net beneficial is impossible in practice. We introduce the Darwin G\u00f6del Machine (DGM), a self-improving system that iteratively modifies its own code (thereby also improving its ability to modify its own codebase) and empirically validates each change using coding benchmarks. Inspired by Darwinian evolution and open-endedness research, the DGM maintains an archive of generated coding agents. It grows the archive by sampling an agent from it and using a foundation model to create a new, interesting, version of the sampled agent. This open-ended exploration forms a growing tree of diverse, high-quality agents and allows the parallel exploration of many different paths through the search space. Empirically, the DGM automatically improves its coding capabilities (e.g., better code editing tools, long-context window management, peer-review mechanisms), increasing performance on SWE-bench from 20.0% to 50.0%, and on Polyglot from 14.2% to 30.7%. Furthermore, the DGM significantly outperforms baselines without self-improvement or open-ended exploration. All experiments were done with safety precautions (e.g., sandboxing, human oversight). The DGM is a significant step toward self-improving AI, capable of gathering its own stepping stones along paths that unfold into endless innovation.",
+    "abstract": "Today's AI systems have human-designed, fixed architectures and cannot autonomously and continuously improve themselves. The advance of AI could itself be automated. If done safely, that would accelerate AI development and allow us to reap its benefits much sooner. Meta-learning can automate the discovery of novel algorithms, but is limited by first-order improvements and the human design of a suitable search space. The Gödel machine proposed a theoretical alternative: a self-improving AI that repeatedly modifies itself in a provably beneficial manner. Unfortunately, proving that most changes are net beneficial is impossible in practice. We introduce the Darwin Gödel Machine (DGM), a self-improving system that iteratively modifies its own code (thereby also improving its ability to modify its own codebase) and empirically validates each change using coding benchmarks. Inspired by Darwinian evolution and open-endedness research, the DGM maintains an archive of generated coding agents. It grows the archive by sampling an agent from it and using a foundation model to create a new, interesting, version of the sampled agent. This open-ended exploration forms a growing tree of diverse, high-quality agents and allows the parallel exploration of many different paths through the search space. Empirically, the DGM automatically improves its coding capabilities (e.g., better code editing tools, long-context window management, peer-review mechanisms), increasing performance on SWE-bench from 20.0% to 50.0%, and on Polyglot from 14.2% to 30.7%. Furthermore, the DGM significantly outperforms baselines without self-improvement or open-ended exploration. All experiments were done with safety precautions (e.g., sandboxing, human oversight). The DGM is a significant step toward self-improving AI, capable of gathering its own stepping stones along paths that unfold into endless innovation.",
     "added": "2026-02-12T12:00:00Z"
   }
 ]
