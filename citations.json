@@ -42,6 +42,9 @@
       "We want AI agents that can discover like we can, not which contain what we have discovered"
     ],
     "notes": "Richard S. Sutton received the 2024 Turing Award with Andrew Barto for their foundational work on reinforcement learning. This essay has become a touchstone for the scaling hypothesis in AI.",
+    "checksums": {
+      "git": "c1156118cc59a4fb76103a231fa3e17f8415f83e"
+    },
     "added": "2026-02-26T10:55:00Z"
   },
   {
