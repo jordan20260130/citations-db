@@ -565,6 +565,31 @@
     "added": "2026-02-12T12:00:00Z"
   },
   {
+    "id": "singularity1993",
+    "authors": [
+      "Vinge, Vernor"
+    ],
+    "title": "The Coming Technological Singularity: How to Survive in the Post-Human Era",
+    "year": 1993,
+    "url": "https://edoras.sdsu.edu/~vinge/misc/singularity.html",
+    "venue": "VISION-21 Symposium, NASA Lewis Research Center",
+    "bibtex_type": "inproceedings",
+    "tags": [
+      "AI",
+      "singularity",
+      "AI-safety",
+      "posthuman"
+    ],
+    "abstract": "Seminal essay arguing that within 30 years we will have the technological means to create superhuman intelligence, and that shortly after, the human era will be ended. Introduces the concept of the technological singularity as a point where our old models must be discarded and a new reality rules. Proposes four paths to superhuman intelligence: artificial intelligence, network intelligence, human-computer interfaces, and biological enhancement. Distinguishes between hard takeoff (hours/days) and soft takeoff (years/decades) scenarios.",
+    "claims": [
+      "Superhuman intelligence will be created between 2005 and 2030",
+      "The first ultraintelligent machine is the last invention humans need ever make",
+      "Beyond the singularity, human affairs as we know them cannot continue"
+    ],
+    "notes": "First wide-scale popularization of the technological singularity concept. Credits I.J. Good (1965) for the 'intelligence explosion' concept and von Neumann for early use of 'singularity' in this context. Vinge predicted he would be surprised if the singularity occurred before 2005 or after 2030. He died in March 2024.",
+    "added": "2026-02-26T11:00:00Z"
+  },
+  {
     "id": "song2025detailed",
     "authors": [
       "Song, Zhuo-Yang",
