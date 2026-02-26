@@ -590,6 +590,9 @@
       "Beyond the singularity, human affairs as we know them cannot continue"
     ],
     "notes": "First wide-scale popularization of the technological singularity concept. Credits I.J. Good (1965) for the 'intelligence explosion' concept and von Neumann for early use of 'singularity' in this context. Vinge predicted he would be surprised if the singularity occurred before 2005 or after 2030. He died in March 2024.",
+    "checksums": {
+      "git": "3f7d2ed0383ce3747b2651f62a8b87097ddb25ea"
+    },
     "added": "2026-02-26T11:00:00Z"
   },
   {
