@@ -20,6 +20,31 @@
     "added": "2026-02-12T12:00:00Z"
   },
   {
+    "id": "bitterlesson",
+    "authors": [
+      "Sutton, Richard S."
+    ],
+    "title": "The Bitter Lesson",
+    "year": 2019,
+    "url": "http://www.incompleteideas.net/IncIdeas/BitterLesson.html",
+    "venue": "incompleteideas.net",
+    "bibtex_type": "misc",
+    "tags": [
+      "AI",
+      "scaling",
+      "compute",
+      "reinforcement-learning"
+    ],
+    "abstract": "A short but influential essay arguing that 70 years of AI research has shown that general methods that leverage computation are ultimately the most effective, and by a large margin. Domain-specific human knowledge—chess heuristics, speech features, linguistic structure—provides short-term gains but is eventually outcompeted by methods that scale with compute. The 'bitter lesson' is that building in how we think does not work in the long run.",
+    "claims": [
+      "General methods that scale with computation dominate domain-specific approaches in the long run",
+      "Human knowledge of domain structure provides short-term gains but eventually impedes progress",
+      "We want AI agents that can discover like we can, not which contain what we have discovered"
+    ],
+    "notes": "Richard S. Sutton received the 2024 Turing Award with Andrew Barto for their foundational work on reinforcement learning. This essay has become a touchstone for the scaling hypothesis in AI.",
+    "added": "2026-02-26T10:55:00Z"
+  },
+  {
     "id": "brandstetter2022clifford",
     "authors": [
       "Brandstetter, Johannes",
