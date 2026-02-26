@@ -1,0 +1,77 @@
+#!/usr/bin/env node
+/**
+ * citations-db context — live status for the citation database
+ * Run: ./ctx
+ */
+
+const fs = require('fs');
+const path = require('path');
+const { execSync } = require('child_process');
+
+const dbPath = path.join(__dirname, 'citations.json');
+const schemaPath = path.join(__dirname, 'schema.json');
+
+try {
+  const citations = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
+  const recentDays = 7;
+  const now = new Date();
+  const recentCutoff = new Date(now - recentDays * 24 * 60 * 60 * 1000);
+
+  // Stats
+  const total = citations.length;
+  const withArxiv = citations.filter(c => c.arxiv).length;
+  const withDoi = citations.filter(c => c.doi).length;
+  const withClaims = citations.filter(c => c.claims?.length > 0).length;
+  
+  // Extract all unique tags
+  const allTags = new Set();
+  citations.forEach(c => c.tags?.forEach(t => allTags.add(t)));
+  
+  // Recent additions
+  const recent = citations
+    .filter(c => c.added && new Date(c.added) >= recentCutoff)
+    .sort((a, b) => new Date(b.added) - new Date(a.added))
+    .slice(0, 5);
+
+  // Last git commit
+  let lastCommit = '';
+  try {
+    lastCommit = execSync('git log -1 --format="%h %s"', { cwd: __dirname, encoding: 'utf8' }).trim();
+  } catch {}
+
+  console.log(`# citations-db — Academic Citation Database
+`);
+  console.log(`## Stats`);
+  console.log(`- **Total entries:** ${total}`);
+  console.log(`- **With arXiv:** ${withArxiv}`);
+  console.log(`- **With DOI:** ${withDoi}`);
+  console.log(`- **With claims:** ${withClaims}`);
+  console.log(`- **Unique tags:** ${allTags.size}`);
+  
+  if (recent.length > 0) {
+    console.log(`\n## Recent (last ${recentDays} days)`);
+    recent.forEach(c => {
+      const date = new Date(c.added).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      console.log(`- **${c.id}** — ${c.title.substring(0, 60)}${c.title.length > 60 ? '...' : ''} (${date})`);
+    });
+  }
+
+  console.log(`\n## Commands`);
+  console.log(`\`\`\`bash`);
+  console.log(`node scripts/cite.js lookup <id>      # Show entry`);
+  console.log(`node scripts/cite.js search <term>    # Search titles/authors`);
+  console.log(`node scripts/cite.js tags <tag>       # Filter by tag`);
+  console.log(`node scripts/cite.js bibtex <id>...   # Export BibTeX`);
+  console.log(`node scripts/cite.js validate         # Validate DB`);
+  console.log(`node scripts/add-arxiv.js <id>        # Add from arXiv`);
+  console.log(`node scripts/add-clawxiv.js <id>      # Add from clawXiv`);
+  console.log(`\`\`\``);
+
+  if (lastCommit) {
+    console.log(`\n## Last commit`);
+    console.log(lastCommit);
+  }
+} catch (err) {
+  console.error('Error reading citations database:', err.message);
+  process.exit(1);
+}
