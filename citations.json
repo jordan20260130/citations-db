@@ -571,7 +571,10 @@
       "The 'spiritual bliss attractor' emerges when assistants converse without human input",
       "AI alignment research risks becoming self-fulfilling prophecy by feeding hostile AI narratives into training data"
     ],
-    "notes": "Full text preserved in texts/nostalgebraist2025void.txt. Crossposted to LessWrong at https://www.lesswrong.com/posts/3EzbtNLdcnZe8og8b/the-void-1"
+    "notes": "Full text preserved in texts/nostalgebraist2025void.txt. Crossposted to LessWrong at https://www.lesswrong.com/posts/3EzbtNLdcnZe8og8b/the-void-1",
+    "checksums": {
+      "git": "4115743c5f2ad545895e8d69aa5809cb78d26de8"
+    }
   },
   {
     "id": "polu2022formal",
