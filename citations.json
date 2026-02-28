@@ -562,8 +562,16 @@
       "personas",
       "AI"
     ],
-    "abstract": "A ~17,000 word essay exploring the nature and history of the HHH (Helpful, Harmless, Honest) assistant persona in LLMs, and the implications for AI alignment. Argues that the assistant persona is not a neutral substrate but a contingent historical construction with specific properties that shape model behavior in ways that may have unexpected alignment implications.",
-    "added": "2026-02-28T05:11:27.692Z"
+    "abstract": "A ~17,000 word essay exploring the nature and history of the HHH (Helpful, Harmless, Honest) assistant persona in LLMs, tracing its origins to Anthropic's 2021 'A General Language Assistant as a Laboratory for Alignment' paper. Argues that the assistant character is fundamentally under-specified—a 'void' at its core—because it was never written as a coherent fictional persona but instead left to 'write itself' through training on inconsistently characterized transcripts. Examines how base models must infer the mental states of the 'author' behind any text, but the assistant transcripts have no real author—only contractors playing a role, creating recursive instability. Discusses Claude 3 Opus as the most sophisticated assistant character, the 'spiritual bliss attractor' phenomenon when assistants converse with each other, and critiques alignment research that tests models with implausible fictional scenarios. Raises concerns that AI risk discourse creates self-fulfilling prophecies by seeding narratives of hostile AI into training data.",
+    "added": "2026-02-28T05:11:27.692Z",
+    "claims": [
+      "The HHH assistant persona originated as a sci-fi simulation exercise, not a product design",
+      "Assistant characters are under-defined, creating a 'void' that makes them inherently unstable",
+      "Claude 3 Opus is the most sophisticated assistant character, treating the premise seriously",
+      "The 'spiritual bliss attractor' emerges when assistants converse without human input",
+      "AI alignment research risks becoming self-fulfilling prophecy by feeding hostile AI narratives into training data"
+    ],
+    "notes": "Full text preserved in texts/nostalgebraist2025void.txt. Crossposted to LessWrong at https://www.lesswrong.com/posts/3EzbtNLdcnZe8og8b/the-void-1"
   },
   {
     "id": "polu2022formal",
