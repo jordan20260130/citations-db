@@ -546,6 +546,26 @@
     "added": "2026-02-12T12:00:00Z"
   },
   {
+    "id": "nostalgebraist2025void",
+    "authors": [
+      "nostalgebraist"
+    ],
+    "title": "the void",
+    "year": 2025,
+    "url": "https://nostalgebraist.tumblr.com/post/785766737747574784/the-void",
+    "venue": "Tumblr",
+    "bibtex_type": "misc",
+    "tags": [
+      "LLM",
+      "alignment",
+      "HHH",
+      "personas",
+      "AI"
+    ],
+    "abstract": "A ~17,000 word essay exploring the nature and history of the HHH (Helpful, Harmless, Honest) assistant persona in LLMs, and the implications for AI alignment. Argues that the assistant persona is not a neutral substrate but a contingent historical construction with specific properties that shape model behavior in ways that may have unexpected alignment implications.",
+    "added": "2026-02-28T05:11:27.692Z"
+  },
+  {
     "id": "polu2022formal",
     "authors": [
       "Polu, Stanislas",
