@@ -696,6 +696,35 @@
     "added": "2026-02-12T12:00:00Z"
   },
   {
+    "id": "veblen1899leisure",
+    "authors": [
+      "Veblen, Thorstein Bunde"
+    ],
+    "title": "The Theory of the Leisure Class: An Economic Study in the Evolution of Institutions",
+    "year": 1899,
+    "venue": "Macmillan",
+    "url": "https://www.gutenberg.org/ebooks/833",
+    "bibtex_type": "book",
+    "tags": [
+      "economics",
+      "sociology",
+      "institutional-economics",
+      "conspicuous-consumption"
+    ],
+    "abstract": "Foundational work of institutional economics introducing the concepts of conspicuous consumption and conspicuous leisure. Veblen analyzes the leisure class as a social institution that emerged from primitive predatory cultures, where status derived from exemption from useful labor. He traces how pecuniary emulation drives wasteful consumption, and how this 'leisure-class' mentality pervades modern industrial society despite its economic inefficiency. Key concepts include: conspicuous consumption, conspicuous leisure, vicarious leisure, pecuniary emulation, and the Veblenian dichotomy between 'industrial' and 'pecuniary' employments.",
+    "claims": [
+      "The leisure class originated from predatory cultures where prowess in war and hunting conferred status",
+      "Conspicuous consumption and conspicuous leisure are wasteful activities that signal status",
+      "Pecuniary emulation—the drive to outdo others in display—shapes modern consumption patterns",
+      "Business (pecuniary) interests often conflict with industrial efficiency"
+    ],
+    "notes": "Plain text preserved at /mnt/dossier/ppl/V/Veblen/Thorstein/Bunde/1/pg833.txt (Project Gutenberg #833). First academic work to systematically analyze wealth and consumerism in American society. Founded institutional economics.",
+    "checksums": {
+      "git": "06db9a69c25354d10a58cae839ac9a820dc873e5"
+    },
+    "added": "2026-03-05T06:20:00Z"
+  },
+  {
     "id": "wynn2025talk",
     "authors": [
       "Wynn, Andrea",
