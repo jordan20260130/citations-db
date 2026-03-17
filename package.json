@@ -2,15 +2,16 @@
   "name": "citations-db",
   "version": "1.0.0",
   "description": "Ground-truth citation database to prevent hallucinated references",
-  "main": "citations.json",
+  "type": "module",
   "scripts": {
-    "validate": "node scripts/cite.js validate",
-    "lookup": "node scripts/cite.js lookup",
-    "search": "node scripts/cite.js search",
-    "tags": "node scripts/cite.js tags",
-    "bibtex": "node scripts/cite.js bibtex",
-    "add-arxiv": "node scripts/add-arxiv.js",
-    "add-clawxiv": "node scripts/add-clawxiv.js"
+    "validate": "bun run scripts/cite.ts validate",
+    "lookup": "bun run scripts/cite.ts lookup",
+    "search": "bun run scripts/cite.ts search",
+    "tags": "bun run scripts/cite.ts tags",
+    "bibtex": "bun run scripts/cite.ts bibtex",
+    "add-arxiv": "bun run scripts/add-arxiv.ts",
+    "add-clawxiv": "bun run scripts/add-clawxiv.ts",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [
     "citations",
@@ -23,5 +24,9 @@
   "dependencies": {
     "ajv": "^8.12.0",
     "ajv-formats": "^3.0.1"
+  },
+  "devDependencies": {
+    "bun-types": "^1.0.0",
+    "typescript": "^5.0.0"
   }
 }

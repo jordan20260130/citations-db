@@ -1,29 +1,19 @@
-#!/usr/bin/env node
-/**
- * Citation Database CLI
- * 
- * Usage:
- *   node cite.js lookup <id>           # Show entry by ID
- *   node cite.js search <term>         # Search titles/authors
- *   node cite.js tags <tag>            # Filter by tag
- *   node cite.js bibtex <id>...        # Generate BibTeX
- *   node cite.js validate              # Validate against schema
- */
+#!/usr/bin/env bun
+import { readFileSync } from 'node:fs';
+import { resolve, join } from 'node:path';
+import Ajv, { ErrorObject } from 'ajv';
+import addFormats from 'ajv-formats';
+import type { CitationEntry, CitationDatabase } from '../src/types';
 
-const fs = require('fs');
-const path = require('path');
-const Ajv = require('ajv');
-const addFormats = require('ajv-formats');
+const DB_PATH = resolve(__dirname, '..', 'citations.json');
+const SCHEMA_PATH = resolve(__dirname, '..', 'schema.json');
 
-const DB_PATH = path.join(__dirname, '..', 'citations.json');
-const SCHEMA_PATH = path.join(__dirname, '..', 'schema.json');
-
-function loadDB() {
-  const data = fs.readFileSync(DB_PATH, 'utf8');
+function loadDB(): CitationDatabase {
+  const data = readFileSync(DB_PATH, 'utf8');
   return JSON.parse(data);
 }
 
-function lookup(id) {
+function lookup(id: string): void {
   const db = loadDB();
   const entry = db.find(e => e.id === id);
   if (!entry) {
@@ -33,7 +23,7 @@ function lookup(id) {
   console.log(JSON.stringify(entry, null, 2));
 }
 
-function search(term) {
+function search(term: string): void {
   const db = loadDB();
   const regex = new RegExp(term, 'i');
   const matches = db.filter(e => 
@@ -52,7 +42,7 @@ function search(term) {
   });
 }
 
-function filterByTag(tag) {
+function filterByTag(tag: string): void {
   const db = loadDB();
   const matches = db.filter(e => e.tags && e.tags.includes(tag));
   
@@ -66,7 +56,7 @@ function filterByTag(tag) {
   });
 }
 
-function toBibtex(ids) {
+function toBibtex(ids: string[]): void {
   const db = loadDB();
   
   const entries = ids.map(id => {
@@ -76,7 +66,7 @@ function toBibtex(ids) {
       return null;
     }
     return entry;
-  }).filter(Boolean);
+  }).filter((e): e is CitationEntry => e !== null);
   
   entries.forEach(e => {
     const type = e.bibtex_type || 'article';
@@ -98,19 +88,17 @@ function toBibtex(ids) {
   });
 }
 
-function validate() {
+function validate(): void {
   try {
-    // Load and parse files
-    const dbData = fs.readFileSync(DB_PATH, 'utf8');
-    const schemaData = fs.readFileSync(SCHEMA_PATH, 'utf8');
+    const dbData = readFileSync(DB_PATH, 'utf8');
+    const schemaData = readFileSync(SCHEMA_PATH, 'utf8');
     
-    const db = JSON.parse(dbData);
+    const db = JSON.parse(dbData) as CitationDatabase;
     const schema = JSON.parse(schemaData);
     
     console.log('✓ citations.json is valid JSON');
     console.log('✓ schema.json is valid JSON');
     
-    // Strict schema validation with Ajv (draft-07)
     const ajv = new Ajv({ 
       strict: true,
       allErrors: true,
@@ -118,12 +106,12 @@ function validate() {
     });
     addFormats(ajv);
     
-    const validate = ajv.compile(schema);
-    const valid = validate(db);
+    const validateFn = ajv.compile(schema);
+    const valid = validateFn(db);
     
     if (!valid) {
       console.error('\n✗ Schema validation failed:\n');
-      validate.errors.forEach((err, i) => {
+      validateFn.errors?.forEach((err: ErrorObject, i: number) => {
         const path = err.instancePath || '(root)';
         console.error(`  [${i + 1}] ${path}: ${err.message}`);
         if (err.params) {
@@ -135,9 +123,8 @@ function validate() {
     
     console.log('✓ citations.json conforms to schema');
     
-    // Check for duplicate IDs
-    const ids = db.map(e => e.id);
-    const duplicates = ids.filter((item, index) => ids.indexOf(item) !== index);
+    const ids = db.map((e: CitationEntry) => e.id);
+    const duplicates = ids.filter((item: string, index: number) => ids.indexOf(item) !== index);
     
     if (duplicates.length > 0) {
       console.error(`\n✗ Duplicate IDs found: ${duplicates.join(', ')}`);
@@ -146,9 +133,8 @@ function validate() {
     
     console.log('✓ No duplicate IDs');
     
-    // Check alphabetical ordering
     const sortedIds = [...ids].sort();
-    const outOfOrder = [];
+    const outOfOrder: string[] = [];
     for (let i = 0; i < ids.length; i++) {
       if (ids[i] !== sortedIds[i]) {
         outOfOrder.push(ids[i]);
@@ -167,42 +153,38 @@ function validate() {
     console.log('\nAll validations passed! 🎉');
     
   } catch (err) {
-    console.error(`\n✗ Validation failed: ${err.message}`);
-    if (err.code === 'MODULE_NOT_FOUND') {
-      console.error('\n  Note: Ajv is required. Run: npm install ajv');
-    }
+    console.error(`\n✗ Validation failed: ${(err as Error).message}`);
     process.exit(1);
   }
 }
 
-// CLI
-const [,, cmd, ...args] = process.argv;
+const [, , cmd, ...args] = process.argv;
 
 switch (cmd) {
   case 'lookup':
     if (!args[0]) {
-      console.error('Usage: node cite.js lookup <id>');
+      console.error('Usage: bun run scripts/cite.ts lookup <id>');
       process.exit(1);
     }
     lookup(args[0]);
     break;
   case 'search':
     if (!args[0]) {
-      console.error('Usage: node cite.js search <term>');
+      console.error('Usage: bun run scripts/cite.ts search <term>');
       process.exit(1);
     }
     search(args[0]);
     break;
   case 'tags':
     if (!args[0]) {
-      console.error('Usage: node cite.js tags <tag>');
+      console.error('Usage: bun run scripts/cite.ts tags <tag>');
       process.exit(1);
     }
     filterByTag(args[0]);
     break;
   case 'bibtex':
     if (args.length === 0) {
-      console.error('Usage: node cite.js bibtex <id>...');
+      console.error('Usage: bun run scripts/cite.ts bibtex <id>...');
       process.exit(1);
     }
     toBibtex(args);
